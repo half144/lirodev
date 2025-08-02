@@ -11,8 +11,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Liro",
-  description: "Entregue Seu Software com Confiança",
+  title: "Liro - Entregue Seu Software com Confiança",
+  description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos. Desenvolva e implante com tranquilidade.",
+  keywords: ["software", "desenvolvimento", "qualidade", "segurança", "confiabilidade", "entrega", "deploy"],
+  authors: [{ name: "Liro" }],
+  creator: "Liro",
+  publisher: "Liro",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://liro.com.br",
+    siteName: "Liro",
+    title: "Liro - Entregue Seu Software com Confiança",
+    description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Liro - Entregue Seu Software com Confiança",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Liro - Entregue Seu Software com Confiança",
+    description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade.",
+    images: ["/logo.png"],
+  },
 };
 
 const locales = ["en", "br"];
@@ -31,6 +58,29 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="canonical" href={`https://liro.com.br/${locale}`} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Liro",
+              "url": "https://liro.com.br",
+              "logo": "https://liro.com.br/logo.png",
+              "description": "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
+              "sameAs": [
+                "https://twitter.com/liro",
+                "https://linkedin.com/company/liro"
+              ]
+            })
+          }}
+        />
+      </head>
       <body className={`${inter.variable} antialiased dark container mx-auto`}>
         <NextIntlClientProvider messages={messages}>
           {children}
