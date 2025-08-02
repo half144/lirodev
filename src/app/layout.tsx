@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased dark container mx-auto`}>
         <header className="flex w-full justify-between items-center p-6 px-18">
           <div>
-            <h1 className="text-2xl font-bold">MyApp</h1>
+            <h1 className="text-2xl font-bold">Liro</h1>
           </div>
           <nav className="flex gap-8">
             <a href="/">Home</a>
