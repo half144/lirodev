@@ -4,6 +4,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Header } from "@/components/header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,8 +13,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Liro - Entregue Seu Software com Confiança",
-  description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos. Desenvolva e implante com tranquilidade.",
-  keywords: ["software", "desenvolvimento", "qualidade", "segurança", "confiabilidade", "entrega", "deploy"],
+  description:
+    "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos. Desenvolva e implante com tranquilidade.",
+  keywords: [
+    "software",
+    "desenvolvimento",
+    "qualidade",
+    "segurança",
+    "confiabilidade",
+    "entrega",
+    "deploy",
+  ],
   authors: [{ name: "Liro" }],
   creator: "Liro",
   publisher: "Liro",
@@ -24,7 +34,8 @@ export const metadata: Metadata = {
     url: "https://liro.com.br",
     siteName: "Liro",
     title: "Liro - Entregue Seu Software com Confiança",
-    description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
+    description:
+      "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
     images: [
       {
         url: "/logo.png",
@@ -37,7 +48,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Liro - Entregue Seu Software com Confiança",
-    description: "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade.",
+    description:
+      "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade.",
     images: ["/logo.png"],
   },
 };
@@ -69,20 +81,22 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Liro",
-              "url": "https://liro.com.br",
-              "logo": "https://liro.com.br/logo.png",
-              "description": "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
-              "sameAs": [
+              name: "Liro",
+              url: "https://liro.com.br",
+              logo: "https://liro.com.br/logo.png",
+              description:
+                "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos.",
+              sameAs: [
                 "https://twitter.com/liro",
-                "https://linkedin.com/company/liro"
-              ]
-            })
+                "https://linkedin.com/company/liro",
+              ],
+            }),
           }}
         />
       </head>
       <body className={`${inter.variable} antialiased dark container mx-auto`}>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -2,7 +2,6 @@ import { Meteors } from "@/components/magicui/meteors";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import { TextAnimate } from "@/components/magicui/text-animate";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import {
@@ -88,11 +87,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
-
       <main className="flex flex-col items-center pt-6 sm:pt-12 gap-6 sm:gap-8 px-4">
         <div className="bg-white text-xs sm:text-sm rounded-full font-bold p-0.5 flex items-center gap-2 pr-2 sm:pr-3 max-w-full">
-          <Meteors />
           <div className="bg-lime-300 rounded-full p-1 px-2 text-black whitespace-nowrap">
             {t("badge")}
           </div>
@@ -101,6 +97,7 @@ export default function Home() {
           </div>
         </div>
         <section className="flex flex-col items-center gap-6 sm:gap-10 w-full">
+          <Meteors />
           <div className="max-w-5xl w-full">
             <SparklesText className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center font-bold font-sans leading-tight">
               {t("title")}
@@ -129,8 +126,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16 sm:mt-32 relative w-full">
-          {/* <Spotlight /> */}
+        <div className="mt-16 relative sm:mt-32 relative w-full">
+          <div className="max-w-screen-lg mx-auto">
+            {/* <Meteors className="" /> */}
+          </div>
           <TextHoverEffect text="LIRO" />
         </div>
       </main>
