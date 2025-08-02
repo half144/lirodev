@@ -3,8 +3,8 @@
 import * as React from "react";
 import Link from "next/link";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import {useTranslations} from 'next-intl';
-import {usePathname} from 'next/navigation';
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 import {
   NavigationMenu,
@@ -28,36 +28,36 @@ import { ShimmerButton } from "./magicui/shimmer-button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 function useNavigation() {
-  const t = useTranslations('nav');
-  
+  const t = useTranslations("nav");
+
   return [
     {
-      title: t('services'),
+      title: t("services"),
       href: "#services",
       items: [
         {
-          title: t('customDevelopment'),
+          title: t("customDevelopment"),
           href: "#custom-development",
-          description: t('customDevelopmentDesc'),
+          description: t("customDevelopmentDesc"),
         },
         {
-          title: t('systemIntegration'),
+          title: t("systemIntegration"),
           href: "#integration",
-          description: t('systemIntegrationDesc'),
+          description: t("systemIntegrationDesc"),
         },
         {
-          title: t('performanceOptimization'),
+          title: t("performanceOptimization"),
           href: "#optimization",
-          description: t('performanceOptimizationDesc'),
+          description: t("performanceOptimizationDesc"),
         },
       ],
     },
     {
-      title: t('about'),
+      title: t("about"),
       href: "#about",
     },
     {
-      title: t('contact'),
+      title: t("contact"),
       href: "#contact",
     },
   ];
@@ -94,17 +94,14 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const navigation = useNavigation();
   const pathname = usePathname();
-  const t = useTranslations('nav');
+  const t = useTranslations("nav");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-lime-300">
-            <span className="text-sm font-bold text-black">L</span>
-          </div>
-          <span className="text-xl font-bold">Liro</span>
+          <img src="/logo.png" alt="Liro Logo" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -137,9 +134,7 @@ export function Header() {
                       className={navigationMenuTriggerStyle()}
                       asChild
                     >
-                      <Link href={item.href}>
-                        {item.title}
-                      </Link>
+                      <Link href={item.href}>{item.title}</Link>
                     </NavigationMenuLink>
                   )}
                 </NavigationMenuItem>
@@ -152,7 +147,7 @@ export function Header() {
         <div className="hidden md:flex items-center">
           <LanguageSwitcher />
           <ShimmerButton className="text-white! text-sm ml-2">
-            {t('contactUs')}
+            {t("contactUs")}
           </ShimmerButton>
         </div>
 
@@ -168,9 +163,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <SheetHeader>
                 <SheetTitle className="flex items-center space-x-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-lime-300">
-                    <span className="text-xs font-bold text-black">L</span>
-                  </div>
+                  <img src="/logo.png" alt="Liro Logo" className="h-6 w-auto" />
                   <span>Liro</span>
                 </SheetTitle>
               </SheetHeader>
@@ -211,7 +204,7 @@ export function Header() {
                 </ul>
                 <div className="mt-6 flex flex-col gap-3">
                   <LanguageSwitcher />
-                  <ShimmerButton>{t('contact')}</ShimmerButton>
+                  <ShimmerButton>{t("contact")}</ShimmerButton>
                 </div>
               </nav>
             </SheetContent>

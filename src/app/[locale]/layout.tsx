@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,16 +15,16 @@ export const metadata: Metadata = {
   description: "Entregue Seu Software com Confiança",
 };
 
-const locales = ['en', 'pt'];
+const locales = ["en", "br"];
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
+  const { locale } = await params;
   if (!locales.includes(locale)) notFound();
 
   const messages = await getMessages();
