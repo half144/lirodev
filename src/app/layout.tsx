@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -24,9 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased dark container mx-auto`}>
+        <header className="flex w-full justify-between items-center p-6 px-18">
+          <div>
+            <h1 className="text-2xl font-bold">MyApp</h1>
+          </div>
+          <nav className="flex gap-8">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/blog">Blog</a>
+          </nav>
+          <div>
+            <ShimmerButton className="text-white! text-sm">
+              Contact Us!
+            </ShimmerButton>
+          </div>
+        </header>
         {children}
       </body>
     </html>
