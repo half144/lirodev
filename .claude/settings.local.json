@@ -9,7 +9,9 @@
       "Bash(move \"src\\app\\page.tsx\" \"src\\app\\[locale]\\page.tsx\")",
       "Bash(mv:*)",
       "Bash(npm run build:*)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(rm:*)",
+      "WebFetch(domain:next-intl.dev)"
     ],
     "deny": []
   }
