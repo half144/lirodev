@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Solutions",
+    "about": "Company",
+    "contact": "Let's Talk",
+    "customDevelopment": "Custom Development",
+    "systemIntegration": "System Integration",
+    "performanceOptimization": "Performance Optimization",
+    "customDevelopmentDesc": "Tailored software solutions for your business needs",
+    "systemIntegrationDesc": "Connect and optimize your existing tools",
+    "performanceOptimizationDesc": "Supercharge your application performance",
+    "contactUs": "Contact Us!"
+  },
+  "hero": {
+    "badge": "Enterprise Software",
+    "badgeText": "We turn ideas into systems that drive measurable results",
+    "title": "Software That Accelerates Your Growth",
+    "subtitle": "We build enterprise solutions that reduce operational costs by up to 40% and boost your team's productivity. Technology that delivers measurable ROI.",
+    "cta": "Schedule Free Consultation"
+  },
+  "features": {
+    "customDevelopment": {
+      "name": "Strategic Development",
+      "description": "Custom enterprise systems that automate critical processes and eliminate operational bottlenecks. Average ROI of 300% in the first year.",
+      "cta": "View Success Stories"
+    },
+    "rapidDeployment": {
+      "name": "Accelerated Go-to-Market",
+      "description": "Production deployment 60% faster with our enterprise DevOps methodology. Reduce time-to-market and capture opportunities quicker.",
+      "cta": "Learn Methodology"
+    },
+    "systemIntegration": {
+      "name": "Intelligent Integration",
+      "description": "We unify your legacy and modern systems into a cohesive ecosystem. Eliminate data silos and gain complete business visibility.",
+      "cta": "Assess Architecture"
+    },
+    "performanceOptimization": {
+      "name": "Enterprise Performance",
+      "description": "Optimizations that reduce latency by up to 80% and infrastructure costs by 50%. Applications that scale with your growth.",
+      "cta": "Audit Performance"
+    },
+    "crossPlatformApps": {
+      "name": "Native Cross-Platform",
+      "description": "Apps that perform like natives across all platforms, reducing development costs by 60% without compromising quality.",
+      "cta": "Prototype Solution"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Liro. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "tagline": "Building the future with innovative technology"
+  }
+}

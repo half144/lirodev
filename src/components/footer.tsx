@@ -1,20 +1,29 @@
+"use client";
+
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import {useTranslations} from 'next-intl';
+import Link from "next/link";
 
-const footerLinks = {
-  company: [
-    { name: "About", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Contact", href: "#" },
-  ],
-  legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-  ],
-};
+function useFooterLinks() {
+  const t = useTranslations('footer');
+  const nav = useTranslations('nav');
+  
+  return {
+    company: [
+      { name: nav('about'), href: "#" },
+      { name: nav('services'), href: "#" },
+      { name: nav('contact'), href: "#" },
+    ],
+    legal: [
+      { name: t('privacyPolicy'), href: "#" },
+      { name: t('termsOfService'), href: "#" },
+    ],
+  };
+}
 
 const socialLinks = [
   { name: "LinkedIn", icon: LinkedInLogoIcon, href: "#" },
@@ -23,6 +32,9 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const footerLinks = useFooterLinks();
+  const t = useTranslations('footer');
+  
   return (
     <footer className="text-white">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -31,29 +43,29 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-lime-300 mb-2">Liro</h3>
             <p className="text-gray-400 text-sm">
-              Building the future with innovative technology
+              {t('tagline')}
             </p>
           </div>
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-6">
             {footerLinks.company.map((link, index) => (
-              <a
+              <Link
                 key={index}
                 href={link.href}
                 className="text-gray-300 hover:text-lime-300 transition-colors text-sm"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             {footerLinks.legal.map((link, index) => (
-              <a
+              <Link
                 key={index}
                 href={link.href}
                 className="text-gray-300 hover:text-lime-300 transition-colors text-sm"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -75,7 +87,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-6 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Liro. All rights reserved.
+            {t('copyright')}
           </p>
         </div>
       </div>

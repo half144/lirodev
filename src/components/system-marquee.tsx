@@ -79,19 +79,19 @@ const SystemCard = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-80 cursor-pointer overflow-hidden rounded-xl border p-6",
+        "relative h-full w-64 sm:w-72 md:w-80 cursor-pointer overflow-hidden rounded-xl border p-4 sm:p-6",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-3 mb-3">
-        <div className="p-2 rounded-lg bg-lime-300/20 dark:bg-lime-300/10">
-          <Icon className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+      <div className="flex flex-row items-center gap-2 sm:gap-3 mb-3">
+        <div className="p-1.5 sm:p-2 rounded-lg bg-lime-300/20 dark:bg-lime-300/10">
+          <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-lime-600 dark:text-lime-400" />
         </div>
-        <div className="flex flex-col">
-          <figcaption className="text-base font-semibold dark:text-white">
+        <div className="flex flex-col min-w-0 flex-1">
+          <figcaption className="text-sm sm:text-base font-semibold dark:text-white truncate">
             {name}
           </figcaption>
           <p className="text-xs font-medium text-lime-600 dark:text-lime-400 bg-lime-50 dark:bg-lime-950/30 px-2 py-1 rounded-full w-fit">
@@ -99,7 +99,7 @@ const SystemCard = ({
           </p>
         </div>
       </div>
-      <blockquote className="text-sm text-gray-600 dark:text-gray-300">
+      <blockquote className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
         {description}
       </blockquote>
     </figure>
@@ -110,15 +110,15 @@ export function SystemMarquee({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative flex w-full flex-col items-center justify-center overflow-hidden py-8",
+        "relative flex w-full flex-col items-center justify-center overflow-hidden py-6 sm:py-8 px-4",
         className
       )}
     >
-      <div className="mb-8 text-center">
-        <h2 className="text-3xl font-bold dark:text-white mb-2">
+      <div className="mb-6 sm:mb-8 text-center max-w-4xl">
+        <h2 className="text-2xl sm:text-3xl font-bold dark:text-white mb-2">
           System Architecture
         </h2>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 px-4">
           Built with industry-leading practices and technologies
         </p>
       </div>

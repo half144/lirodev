@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Soluções",
+    "about": "Empresa",
+    "contact": "Conversar",
+    "customDevelopment": "Desenvolvimento Personalizado",
+    "systemIntegration": "Integração de Sistemas",
+    "performanceOptimization": "Otimização de Performance",
+    "customDevelopmentDesc": "Soluções de software sob medida para suas necessidades de negócio",
+    "systemIntegrationDesc": "Conecte e otimize suas ferramentas existentes",
+    "performanceOptimizationDesc": "Turbine a performance da sua aplicação",
+    "contactUs": "Entre em Contato!"
+  },
+  "hero": {
+    "badge": "Enterprise Software",
+    "badgeText": "Transformamos ideias em sistemas que geram resultados",
+    "title": "Software que Acelera Seu Crescimento",
+    "subtitle": "Desenvolvemos soluções enterprise que reduzem custos operacionais em até 40% e aumentam a produtividade da sua equipe. Tecnologia que gera ROI mensurável.",
+    "cta": "Agendar Consultoria Gratuita"
+  },
+  "features": {
+    "customDevelopment": {
+      "name": "Desenvolvimento Estratégico",
+      "description": "Sistemas enterprise sob medida que automatizam processos críticos e eliminam gargalos operacionais. ROI médio de 300% no primeiro ano.",
+      "cta": "Ver Cases de Sucesso"
+    },
+    "rapidDeployment": {
+      "name": "Go-to-Market Acelerado",
+      "description": "Deploy em produção em 60% menos tempo com nossa metodologia DevOps enterprise. Reduza time-to-market e capture oportunidades mais rápido.",
+      "cta": "Conhecer Metodologia"
+    },
+    "systemIntegration": {
+      "name": "Integração Inteligente",
+      "description": "Unificamos seus sistemas legados e modernos em um ecossistema coeso. Elimine silos de dados e ganhe visibilidade completa do negócio.",
+      "cta": "Avaliar Arquitetura"
+    },
+    "performanceOptimization": {
+      "name": "Performance Enterprise",
+      "description": "Otimizações que reduzem latência em até 80% e custos de infraestrutura em 50%. Aplicações que escalam conforme seu crescimento.",
+      "cta": "Auditar Performance"
+    },
+    "crossPlatformApps": {
+      "name": "Multiplataforma Nativa",
+      "description": "Apps que performam como nativos em todas as plataformas, reduzindo custos de desenvolvimento em 60% sem comprometer qualidade.",
+      "cta": "Prototipar Solução"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Liro. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "tagline": "Construindo o futuro com tecnologia inovadora"
+  }
+}
