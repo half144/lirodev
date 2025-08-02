@@ -89,9 +89,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+
       <main className="flex flex-col items-center pt-6 sm:pt-12 gap-6 sm:gap-8 px-4">
-        <Meteors />
         <div className="bg-white text-xs sm:text-sm rounded-full font-bold p-0.5 flex items-center gap-2 pr-2 sm:pr-3 max-w-full">
+          <Meteors />
           <div className="bg-lime-300 rounded-full p-1 px-2 text-black whitespace-nowrap">
             {t("badge")}
           </div>
