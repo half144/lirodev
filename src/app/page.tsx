@@ -114,9 +114,9 @@ export default function Home() {
       </div>
 
       <div className="mt-32">
-        <div className="relative">
+        <div className="relative container mx-auto">
           <Particles className="absolute inset-0" />
-          <SystemMarquee className="relative z-10" />
+          <SystemMarquee className="max-w-screen-lg" />
         </div>
       </div>
 
