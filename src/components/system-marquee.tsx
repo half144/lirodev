@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
+import { Card } from "@/components/ui/card";
 import {
   CodeIcon,
   RocketIcon,
@@ -77,32 +78,24 @@ const SystemCard = ({
   metric: string;
 }) => {
   return (
-    <figure
-      className={cn(
-        "relative h-full w-64 sm:w-72 md:w-80 cursor-pointer overflow-hidden rounded-xl border p-4 sm:p-6",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-      )}
-    >
+    <Card className="h-full w-64 sm:w-72 md:w-80 cursor-pointer p-4 sm:p-6">
       <div className="flex flex-row items-center gap-2 sm:gap-3 mb-3">
         <div className="p-1.5 sm:p-2 rounded-lg bg-primary/20 dark:bg-primary/10">
           <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary dark:text-primary" />
         </div>
         <div className="flex flex-col min-w-0 flex-1">
-          <figcaption className="text-sm sm:text-base font-semibold dark:text-white truncate">
+          <h3 className="text-sm sm:text-base font-semibold dark:text-white truncate">
             {name}
-          </figcaption>
+          </h3>
           <p className="text-xs font-medium text-primary dark:text-primary bg-primary/10 dark:bg-primary/20 px-2 py-1 rounded-full w-fit">
             {metric}
           </p>
         </div>
       </div>
-      <blockquote className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
         {description}
-      </blockquote>
-    </figure>
+      </p>
+    </Card>
   );
 };
 

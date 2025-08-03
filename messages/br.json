@@ -54,5 +54,93 @@
     "privacyPolicy": "Política de Privacidade",
     "termsOfService": "Termos de Serviço",
     "tagline": "Construindo o futuro com tecnologia inovadora"
+  },
+  "careers": {
+    "badge": "Carreiras",
+    "badgeText": "Construa o futuro conosco",
+    "title": "Faça Parte da Nossa Equipe",
+    "subtitle": "Junte-se a uma equipe apaixonada por transformar negócios através da tecnologia. Oferecemos um ambiente colaborativo, projetos desafiadores e oportunidades reais de crescimento profissional.",
+    "valuesTitle": "Nossos Valores",
+    "valuesSubtitle": "Os princípios que guiam nossa cultura e definem quem somos como empresa",
+    "values": {
+      "innovation": {
+        "title": "Inovação",
+        "description": "Buscamos constantemente novas tecnologias e metodologias para entregar soluções de ponta"
+      },
+      "collaboration": {
+        "title": "Colaboração",
+        "description": "Acreditamos no poder do trabalho em equipe e na diversidade de perspectivas"
+      },
+      "excellence": {
+        "title": "Excelência",
+        "description": "Comprometimento com qualidade técnica e resultados excepcionais em cada projeto"
+      },
+      "impact": {
+        "title": "Impacto",
+        "description": "Focamos em criar soluções que geram valor real para nossos clientes e sociedade"
+      }
+    },
+    "positionsTitle": "Vagas Abertas",
+    "positionsSubtitle": "Explore nossas oportunidades e encontre a posição ideal para seu crescimento profissional",
+    "positions": {
+      "fullStackDeveloper": {
+        "title": "Desenvolvedor Full Stack Sênior",
+        "department": "Desenvolvimento",
+        "location": "Remoto",
+        "type": "Tempo Integral",
+        "description": "Procuramos um desenvolvedor full stack experiente para liderar o desenvolvimento de soluções enterprise complexas. Você trabalhará com tecnologias modernas e terá autonomia para propor melhorias arquiteturais.",
+        "requirements": [
+          "5+ anos de experiência com React, Next.js e Node.js",
+          "Experiência sólida com TypeScript e bancos de dados relacionais",
+          "Conhecimento em Docker, CI/CD e arquitetura de microsserviços",
+          "Experiência com testes automatizados e metodologias ágeis"
+        ]
+      },
+      "devopsEngineer": {
+        "title": "Engenheiro DevOps",
+        "department": "Infraestrutura",
+        "location": "Remoto",
+        "type": "Tempo Integral",
+        "description": "Buscamos um engenheiro DevOps para otimizar nossa infraestrutura e processos de deploy. Você será responsável por implementar soluções de automação e monitoramento em ambientes cloud.",
+        "requirements": [
+          "Experiência com AWS, Azure ou Google Cloud Platform",
+          "Domínio de Terraform, Kubernetes e Docker",
+          "Conhecimento em pipelines CI/CD e GitOps",
+          "Experiência com monitoramento e observabilidade"
+        ]
+      },
+      "productManager": {
+        "title": "Gerente de Produto",
+        "department": "Produto",
+        "location": "Híbrido",
+        "type": "Tempo Integral",
+        "description": "Procuramos um gerente de produto estratégico para liderar o desenvolvimento de produtos enterprise. Você será responsável por definir roadmaps, trabalhar com stakeholders e garantir a entrega de valor.",
+        "requirements": [
+          "3+ anos de experiência em gestão de produtos B2B",
+          "Conhecimento de metodologias ágeis e design thinking",
+          "Experiência com análise de dados e métricas de produto",
+          "Habilidades de comunicação e liderança"
+        ]
+      }
+    },
+    "requirementsTitle": "Requisitos",
+    "benefitsTitle": "Benefícios",
+    "benefits": {
+      "remoteWork": "Trabalho remoto ou híbrido",
+      "healthInsurance": "Plano de saúde e odontológico",
+      "flexibleHours": "Horários flexíveis",
+      "careerGrowth": "Plano de carreira e desenvolvimento"
+    },
+    "applyNow": "Candidatar-se",
+    "learnMore": "Saiba Mais",
+    "ctaTitle": "Não Encontrou a Vaga Ideal?",
+    "ctaSubtitle": "Envie seu currículo para nosso banco de talentos. Sempre estamos em busca de profissionais excepcionais para integrar nossa equipe.",
+    "viewAllPositions": "Ver Todas as Vagas",
+    "submitResume": "Enviar Currículo"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso"
   }
 }

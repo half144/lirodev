@@ -54,5 +54,93 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "tagline": "Building the future with innovative technology"
+  },
+  "careers": {
+    "badge": "Careers",
+    "badgeText": "Build the future with us",
+    "title": "Join Our Team",
+    "subtitle": "Join a passionate team dedicated to transforming businesses through technology. We offer a collaborative environment, challenging projects, and real opportunities for professional growth.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The principles that guide our culture and define who we are as a company",
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly seek new technologies and methodologies to deliver cutting-edge solutions"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We believe in the power of teamwork and diverse perspectives"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Commitment to technical quality and exceptional results in every project"
+      },
+      "impact": {
+        "title": "Impact",
+        "description": "We focus on creating solutions that generate real value for our clients and society"
+      }
+    },
+    "positionsTitle": "Open Positions",
+    "positionsSubtitle": "Explore our opportunities and find the ideal position for your professional growth",
+    "positions": {
+      "fullStackDeveloper": {
+        "title": "Senior Full Stack Developer",
+        "department": "Development",
+        "location": "Remote",
+        "type": "Full Time",
+        "description": "We're looking for an experienced full stack developer to lead the development of complex enterprise solutions. You'll work with modern technologies and have autonomy to propose architectural improvements.",
+        "requirements": [
+          "5+ years experience with React, Next.js and Node.js",
+          "Strong experience with TypeScript and relational databases",
+          "Knowledge of Docker, CI/CD and microservices architecture",
+          "Experience with automated testing and agile methodologies"
+        ]
+      },
+      "devopsEngineer": {
+        "title": "DevOps Engineer",
+        "department": "Infrastructure",
+        "location": "Remote",
+        "type": "Full Time",
+        "description": "We're seeking a DevOps engineer to optimize our infrastructure and deployment processes. You'll be responsible for implementing automation and monitoring solutions in cloud environments.",
+        "requirements": [
+          "Experience with AWS, Azure or Google Cloud Platform",
+          "Proficiency in Terraform, Kubernetes and Docker",
+          "Knowledge of CI/CD pipelines and GitOps",
+          "Experience with monitoring and observability"
+        ]
+      },
+      "productManager": {
+        "title": "Product Manager",
+        "department": "Product",
+        "location": "Hybrid",
+        "type": "Full Time",
+        "description": "We're looking for a strategic product manager to lead enterprise product development. You'll be responsible for defining roadmaps, working with stakeholders and ensuring value delivery.",
+        "requirements": [
+          "3+ years experience in B2B product management",
+          "Knowledge of agile methodologies and design thinking",
+          "Experience with data analysis and product metrics",
+          "Communication and leadership skills"
+        ]
+      }
+    },
+    "requirementsTitle": "Requirements",
+    "benefitsTitle": "Benefits",
+    "benefits": {
+      "remoteWork": "Remote or hybrid work",
+      "healthInsurance": "Health and dental insurance",
+      "flexibleHours": "Flexible hours",
+      "careerGrowth": "Career plan and development"
+    },
+    "applyNow": "Apply Now",
+    "learnMore": "Learn More",
+    "ctaTitle": "Didn't Find the Perfect Role?",
+    "ctaSubtitle": "Send your resume to our talent pool. We're always looking for exceptional professionals to join our team.",
+    "viewAllPositions": "View All Positions",
+    "submitResume": "Submit Resume"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
   }
 }
