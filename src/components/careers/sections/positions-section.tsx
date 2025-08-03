@@ -1,80 +1,25 @@
 'use client';
 
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { JobCard } from "../ui/job-card";
-import { JobPosition } from "../types";
+import { getAllJobs, JobPosition } from "@/lib/data/jobs";
 
 export function PositionsSection() {
   const t = useTranslations("careers");
-
-  const openPositions: JobPosition[] = [
-    {
-      title: t("positions.fullStackDeveloper.title"),
-      department: t("positions.fullStackDeveloper.department"),
-      location: t("positions.fullStackDeveloper.location"),
-      type: t("positions.fullStackDeveloper.type"),
-      description: t("positions.fullStackDeveloper.description"),
-      requirements: [
-        t("positions.fullStackDeveloper.requirements.0"),
-        t("positions.fullStackDeveloper.requirements.1"),
-        t("positions.fullStackDeveloper.requirements.2"),
-        t("positions.fullStackDeveloper.requirements.3")
-      ],
-      benefits: [
-        t("benefits.remoteWork"),
-        t("benefits.healthInsurance"),
-        t("benefits.flexibleHours"),
-        t("benefits.careerGrowth")
-      ]
-    },
-    {
-      title: t("positions.devopsEngineer.title"),
-      department: t("positions.devopsEngineer.department"),
-      location: t("positions.devopsEngineer.location"),
-      type: t("positions.devopsEngineer.type"),
-      description: t("positions.devopsEngineer.description"),
-      requirements: [
-        t("positions.devopsEngineer.requirements.0"),
-        t("positions.devopsEngineer.requirements.1"),
-        t("positions.devopsEngineer.requirements.2"),
-        t("positions.devopsEngineer.requirements.3")
-      ],
-      benefits: [
-        t("benefits.remoteWork"),
-        t("benefits.healthInsurance"),
-        t("benefits.flexibleHours"),
-        t("benefits.careerGrowth")
-      ]
-    },
-    {
-      title: t("positions.productManager.title"),
-      department: t("positions.productManager.department"),
-      location: t("positions.productManager.location"),
-      type: t("positions.productManager.type"),
-      description: t("positions.productManager.description"),
-      requirements: [
-        t("positions.productManager.requirements.0"),
-        t("positions.productManager.requirements.1"),
-        t("positions.productManager.requirements.2"),
-        t("positions.productManager.requirements.3")
-      ],
-      benefits: [
-        t("benefits.remoteWork"),
-        t("benefits.healthInsurance"),
-        t("benefits.flexibleHours"),
-        t("benefits.careerGrowth")
-      ]
-    }
-  ];
+  const params = useParams();
+  const locale = params.locale as 'en' | 'br';
+  
+  const allJobs = getAllJobs();
 
   const handleApply = (position: JobPosition) => {
     // TODO: Implement apply logic
-    console.log("Apply to position:", position.title);
+    console.log("Apply to position:", position.title[locale]);
   };
 
   const handleLearnMore = (position: JobPosition) => {
-    // TODO: Implement learn more logic
-    console.log("Learn more about position:", position.title);
+    // Navigate to job detail page
+    window.location.href = `/${locale}/careers/${position.slug}`;
   };
 
   return (
@@ -85,12 +30,20 @@ export function PositionsSection() {
       </div>
 
       <div className="space-y-6">
-        {openPositions.map((position, index) => (
+        {allJobs.map((position) => (
           <JobCard 
-            key={index} 
-            position={position}
-            onApply={handleApply}
-            onLearnMore={handleLearnMore}
+            key={position.id} 
+            position={{
+              title: position.title[locale],
+              department: position.department[locale],
+              location: position.location[locale],
+              type: position.type[locale],
+              description: position.description[locale],
+              requirements: position.requirements[locale],
+              benefits: position.benefits[locale]
+            }}
+            onApply={() => handleApply(position)}
+            onLearnMore={() => handleLearnMore(position)}
           />
         ))}
       </div>

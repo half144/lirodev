@@ -29,6 +29,8 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 
 function useNavigation() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'br';
 
   return [
     {
@@ -55,6 +57,10 @@ function useNavigation() {
     {
       title: t("about"),
       href: "#about",
+    },
+    {
+      title: t("careers"),
+      href: `/${locale}/careers`,
     },
     {
       title: t("contact"),
