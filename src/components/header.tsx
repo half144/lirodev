@@ -58,7 +58,7 @@ function useNavigation() {
     },
     {
       title: t("about"),
-      href: "#about",
+      href: `/${locale}/company`,
     },
     {
       title: t("careers"),

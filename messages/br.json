@@ -174,5 +174,109 @@
     "saving": "Salvando...",
     "success": "Perfil atualizado com sucesso!",
     "error": "Erro ao atualizar perfil"
+  },
+  "company": {
+    "badge": "Sobre a Liro",
+    "badgeText": "Pioneirismo no futuro da entrega de software",
+    "title": "Construindo as Soluções Enterprise de Amanhã",
+    "subtitle": "Fundada no princípio de que software enterprise deve acelerar o crescimento, não atrapalhá-lo. Somos uma equipe de visionários, engenheiros e estrategistas dedicados a transformar como as empresas aproveitam a tecnologia.",
+    "storyTitle": "Nossa História",
+    "storySubtitle": "De startup a líder enterprise",
+    "storyContent": "Fundada em 2020 por uma equipe de veteranos em software enterprise, a Liro surgiu de uma observação simples: empresas estavam se afogando na complexidade tecnológica enquanto seu crescimento sofria. Decidimos mudar essa narrativa.",
+    "storyHighlight": "Hoje, já ajudamos mais de 200+ empresas a alcançar ROI mensurável através da implementação estratégica de tecnologia.",
+    "valuesTitle": "Nossos Valores Fundamentais",
+    "valuesSubtitle": "Os princípios que orientam tudo o que fazemos",
+    "values": {
+      "resultsFirst": {
+        "title": "Resultados em Primeiro Lugar",
+        "description": "Toda solução que construímos é medida pelo seu impacto no seu resultado final. Não nos satisfazemos a menos que você veja ROI mensurável."
+      },
+      "enterpriseScale": {
+        "title": "Escala Enterprise",
+        "description": "Pensamos grande desde o primeiro dia. Nossas soluções são arquitetadas para crescer com seu negócio, não importa quão rápido você escale."
+      },
+      "technicalExcellence": {
+        "title": "Excelência Técnica",
+        "description": "Tecnologia de ponta aliada à confiabilidade testada em batalha. Não comprometemos qualidade nem inovação."
+      },
+      "partnershipMindset": {
+        "title": "Mentalidade de Parceria",
+        "description": "Seu sucesso é nosso sucesso. Não somos apenas fornecedores—somos parceiros estratégicos investidos no seu crescimento a longo prazo."
+      }
+    },
+    "teamTitle": "Equipe de Liderança",
+    "teamSubtitle": "Líderes experientes que construíram e escalaram soluções enterprise",
+    "team": {
+      "ceo": {
+        "name": "Rafael Silva",
+        "role": "Chief Executive Officer",
+        "bio": "Ex-VP de Engenharia em duas startups unicórnio. Liderou equipes que geraram mais de $100M+ em receita enterprise.",
+        "experience": "15+ anos"
+      },
+      "cto": {
+        "name": "Maria Santos",
+        "role": "Chief Technology Officer",
+        "bio": "Ex-Engenheira Principal em plataformas cloud líderes. Arquiteta de sistemas servindo 100M+ usuários diariamente.",
+        "experience": "12+ anos"
+      },
+      "coo": {
+        "name": "Carlos Mendoza",
+        "role": "Chief Operating Officer",
+        "bio": "Ex-consultor McKinsey especializado em transformação digital para empresas Fortune 500.",
+        "experience": "18+ anos"
+      }
+    },
+    "statsTitle": "Empresa em Números",
+    "statsSubtitle": "O impacto que entregamos",
+    "stats": {
+      "clients": {
+        "number": "200+",
+        "label": "Clientes Enterprise"
+      },
+      "roi": {
+        "number": "300%",
+        "label": "ROI Médio Entregue"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Uptime do Sistema"
+      },
+      "teamSize": {
+        "number": "50+",
+        "label": "Membros Especialistas da Equipe"
+      }
+    },
+    "timelineTitle": "Marcos da Empresa",
+    "timelineSubtitle": "Momentos-chave em nossa jornada",
+    "timeline": {
+      "2020": {
+        "title": "Empresa Fundada",
+        "description": "Liro é estabelecida com a missão de simplificar a entrega de software enterprise"
+      },
+      "2021": {
+        "title": "Primeiro Cliente Enterprise",
+        "description": "Entregamos nossa primeira solução enterprise importante, alcançando 250% de ROI em 6 meses"
+      },
+      "2022": {
+        "title": "Investimento Série A",
+        "description": "Captamos $5M para acelerar o desenvolvimento de produtos e expandir nossa equipe de engenharia"
+      },
+      "2023": {
+        "title": "Marco de 100 Clientes",
+        "description": "Alcançamos 100+ clientes enterprise com uma taxa média de satisfação de 98%"
+      },
+      "2024": {
+        "title": "Expansão Internacional",
+        "description": "Expandimos operações para servir clientes enterprise nas Américas do Norte e Sul"
+      },
+      "2025": {
+        "title": "Plataforma com IA",
+        "description": "Lançamos plataforma de desenvolvimento aprimorada por IA, reduzindo tempo de entrega em 40%"
+      }
+    },
+    "ctaTitle": "Pronto para Transformar Seu Negócio?",
+    "ctaSubtitle": "Junte-se a 200+ clientes enterprise que aceleraram seu crescimento com a Liro",
+    "ctaButton": "Agendar Consultoria Estratégica",
+    "ctaSecondary": "Ver Cases de Sucesso"
   }
 }

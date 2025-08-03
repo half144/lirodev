@@ -174,5 +174,109 @@
     "saving": "Saving...",
     "success": "Profile updated successfully!",
     "error": "Error updating profile"
+  },
+  "company": {
+    "badge": "About Liro",
+    "badgeText": "Pioneering the future of software delivery",
+    "title": "Building Tomorrow's Enterprise Solutions",
+    "subtitle": "Founded on the principle that enterprise software should accelerate growth, not hinder it. We're a team of visionaries, engineers, and strategists dedicated to transforming how businesses leverage technology.",
+    "storyTitle": "Our Story",
+    "storySubtitle": "From startup to enterprise leader",
+    "storyContent": "Founded in 2020 by a team of enterprise software veterans, Liro emerged from a simple observation: businesses were drowning in technological complexity while their growth suffered. We set out to change that narrative.",
+    "storyHighlight": "Today, we've helped over 200+ companies achieve measurable ROI through strategic technology implementation.",
+    "valuesTitle": "Our Core Values",
+    "valuesSubtitle": "The principles that drive everything we do",
+    "values": {
+      "resultsFirst": {
+        "title": "Results First",
+        "description": "Every solution we build is measured by its impact on your bottom line. We're not satisfied unless you see measurable ROI."
+      },
+      "enterpriseScale": {
+        "title": "Enterprise Scale",
+        "description": "We think big from day one. Our solutions are architected to grow with your business, no matter how fast you scale."
+      },
+      "technicalExcellence": {
+        "title": "Technical Excellence",
+        "description": "Cutting-edge technology married with battle-tested reliability. We don't compromise on quality or innovation."
+      },
+      "partnershipMindset": {
+        "title": "Partnership Mindset",
+        "description": "Your success is our success. We're not just vendors—we're strategic partners invested in your long-term growth."
+      }
+    },
+    "teamTitle": "Leadership Team",
+    "teamSubtitle": "Experienced leaders who've built and scaled enterprise solutions",
+    "team": {
+      "ceo": {
+        "name": "Rafael Silva",
+        "role": "Chief Executive Officer",
+        "bio": "Former VP of Engineering at two unicorn startups. Led teams that delivered $100M+ in enterprise revenue.",
+        "experience": "15+ years"
+      },
+      "cto": {
+        "name": "Maria Santos",
+        "role": "Chief Technology Officer",
+        "bio": "Ex-Principal Engineer at leading cloud platforms. Architect of systems serving 100M+ users daily.",
+        "experience": "12+ years"
+      },
+      "coo": {
+        "name": "Carlos Mendoza",
+        "role": "Chief Operating Officer",
+        "bio": "Former McKinsey consultant specializing in digital transformation for Fortune 500 companies.",
+        "experience": "18+ years"
+      }
+    },
+    "statsTitle": "Company by Numbers",
+    "statsSubtitle": "The impact we've delivered",
+    "stats": {
+      "clients": {
+        "number": "200+",
+        "label": "Enterprise Clients"
+      },
+      "roi": {
+        "number": "300%",
+        "label": "Average ROI Delivered"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "System Uptime"
+      },
+      "teamSize": {
+        "number": "50+",
+        "label": "Expert Team Members"
+      }
+    },
+    "timelineTitle": "Company Milestones",
+    "timelineSubtitle": "Key moments in our journey",
+    "timeline": {
+      "2020": {
+        "title": "Company Founded",
+        "description": "Liro is established with a mission to simplify enterprise software delivery"
+      },
+      "2021": {
+        "title": "First Enterprise Client",
+        "description": "Delivered our first major enterprise solution, achieving 250% ROI in 6 months"
+      },
+      "2022": {
+        "title": "Series A Funding",
+        "description": "Raised $5M to accelerate product development and expand our engineering team"
+      },
+      "2023": {
+        "title": "100 Clients Milestone",
+        "description": "Reached 100+ enterprise clients with an average 98% satisfaction rate"
+      },
+      "2024": {
+        "title": "International Expansion",
+        "description": "Expanded operations to serve enterprise clients across North and South America"
+      },
+      "2025": {
+        "title": "AI-Powered Platform",
+        "description": "Launched AI-enhanced development platform, reducing delivery time by 40%"
+      }
+    },
+    "ctaTitle": "Ready to Transform Your Business?",
+    "ctaSubtitle": "Join 200+ enterprise clients who've accelerated their growth with Liro",
+    "ctaButton": "Schedule Strategic Consultation",
+    "ctaSecondary": "View Success Stories"
   }
 }

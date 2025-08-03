@@ -10,6 +10,10 @@ This is a Next.js 15 landing page for Liro, a software delivery platform. The pr
 - Tailwind CSS v4
 - Internationalization (i18n) with next-intl supporting English and Portuguese (Brazilian)
 - Modern UI components using Radix UI and custom MagicUI components
+- Supabase integration for authentication and database
+- React Query for server state management
+- Zustand for client state management
+- Form validation with React Hook Form and Zod
 - Responsive design with mobile-first approach
 
 ## Development Commands
@@ -30,6 +34,26 @@ npm run lint
 
 ## Architecture & Structure
 
+### Authentication & Database
+- **Supabase Integration**: Full authentication system with custom session storage
+- **Database Schema**: PostgreSQL with profiles table and role-based access control
+- **Authentication Hooks**: Query-based hooks for auth state management
+- **Role System**: Admin/user roles with JWT-based role extraction
+- **Session Management**: Cookie + localStorage hybrid storage for SSR compatibility
+- **Migrations**: Located in `supabase-migrations/` directory for database schema
+
+### State Management
+- **React Query**: Server state management with optimistic updates and error handling
+- **Zustand**: Client state for authentication state and session-based role checking
+- **Query Keys**: Centralized query key management in `src/lib/query-keys.ts`
+- **Auth Store**: Session-based immediate role access via `useAuthStore`
+
+### Data Layer
+- **Query Provider**: Centralized React Query configuration with devtools
+- **Auth Queries**: `useAuthQuery` hook for authentication state
+- **Profile Queries**: `useProfileQuery` hook for user profile management
+- **Error Handling**: Structured error handling with retry logic and optimistic updates
+
 ### Internationalization Setup
 - Uses `next-intl` for i18n with middleware-based routing
 - Supported locales: `en` (English) and `br` (Portuguese/Brazilian)
@@ -45,6 +69,8 @@ npm run lint
   - Root layout: `src/app/layout.tsx`
   - Localized layout: `src/app/[locale]/layout.tsx` (contains SEO metadata, structured data, header)
   - Main page: `src/app/[locale]/page.tsx`
+- **Protected Routes**: Login and profile pages with authentication
+- **Careers Section**: Multi-page careers system with job listings and details
 
 ### Component Architecture
 - **UI Components**: `src/components/ui/` - Radix UI-based components using shadcn/ui patterns
@@ -54,7 +80,9 @@ npm run lint
   - `text-animate.tsx`, `text-reveal.tsx`, `sparkles-text.tsx` - Text animations
   - `marquee.tsx`, `scroll-based-velocity.tsx` - Scrolling effects
 - **Layout Components**: `header.tsx`, `footer.tsx`
-- **Feature Components**: `LanguageSwitcher.tsx`, `system-marquee.tsx`
+- **Feature Components**: `LanguageSwitcher.tsx`, `user-menu.tsx`, `system-marquee.tsx`
+- **Form Components**: `login-form.tsx`, `profile-form.tsx` with React Hook Form integration
+- **Career Components**: Modular career page components in `src/components/careers/`
 
 ### Styling & Design System
 - **Tailwind CSS v4**: Uses latest version with CSS variables for theming
@@ -72,16 +100,37 @@ npm run lint
   - Bento grid layout showcasing services/features
   - System marquee for social proof
   - Text reveal section for detailed messaging
+- **User Authentication**: Complete login/logout system with profile management
+- **Career Pages**: Job listings with detailed job descriptions and application flow
 - **Responsive Design**: Mobile-first approach with breakpoint-specific optimizations
 - **Animation System**: Extensive use of motion and interactive animations
 - **SEO Optimization**: Comprehensive metadata, Open Graph, Twitter cards, structured data
 
 ## Development Guidelines
 
+### Authentication Development
+- Use `useAuthQuery()` for authentication state in components
+- Access immediate role checking via `useAuthStore()` methods
+- Follow optimistic update patterns for auth mutations
+- Handle loading states and error conditions properly
+
+### Database Operations
+- Use Supabase client from `src/lib/supabase.ts`
+- Follow type-safe patterns with generated database types
+- Implement proper error handling for database operations
+- Use migrations in `supabase-migrations/` for schema changes
+
+### State Management Patterns
+- Use React Query for server state (API calls, database operations)
+- Use Zustand for client state (UI state, temporary data)
+- Implement proper cache invalidation strategies
+- Follow established query key conventions
+
 ### Adding New Components
 - Follow the established pattern in `src/components/ui/` for base UI components
 - Use `src/components/magicui/` for interactive/animated components
 - Import icons from `@radix-ui/react-icons` or `lucide-react`
+- Integrate proper form validation with React Hook Form and Zod
 
 ### Internationalization
 - Add new text content to both `messages/en.json` and `messages/br.json`
