@@ -4,7 +4,8 @@ import { HeroSection } from '@/components/hero-section';
 import { LetsTalkForm } from '@/components/lets-talk-form';
 import { Footer } from '@/components/footer';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'LetsTalk' });
   
   return {
@@ -23,7 +24,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function LetsTalkPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function LetsTalkPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'LetsTalk' });
   
   return (
