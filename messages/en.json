@@ -143,5 +143,36 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "description": "Enter your credentials to access your account",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "success": "Successfully signed in!"
+    }
+  },
+  "profile": {
+    "title": "User Profile",
+    "description": "Manage your personal information and account settings",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "avatarUrl": "Avatar URL",
+    "avatarUrlPlaceholder": "https://example.com/avatar.jpg",
+    "role": "Role",
+    "selectRole": "Select a role",
+    "roleUser": "User",
+    "roleAdmin": "Administrator",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "success": "Profile updated successfully!",
+    "error": "Error updating profile"
   }
 }

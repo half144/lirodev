@@ -26,6 +26,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ShimmerButton } from "./magicui/shimmer-button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { UserMenu } from "./user-menu";
+import { useAuth } from "@/hooks/use-auth";
 
 function useNavigation() {
   const t = useTranslations("nav");
@@ -101,6 +103,8 @@ export function Header() {
   const navigation = useNavigation();
   const pathname = usePathname();
   const t = useTranslations("nav");
+  const { isAuthenticated, loading } = useAuth();
+  const locale = pathname.split('/')[1] || 'br';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -150,9 +154,18 @@ export function Header() {
         </div>
 
         {/* CTA Button - Desktop */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center space-x-2">
           <LanguageSwitcher />
-          <ShimmerButton className="text-white! text-sm ml-2">
+          {!loading && (
+            isAuthenticated ? (
+              <UserMenu />
+            ) : (
+              <Button variant="outline" size="sm" asChild>
+                <Link href={`/${locale}/login`}>Login</Link>
+              </Button>
+            )
+          )}
+          <ShimmerButton className="text-white! text-sm">
             {t("contactUs")}
           </ShimmerButton>
         </div>
@@ -210,6 +223,15 @@ export function Header() {
                 </ul>
                 <div className="mt-6 flex flex-col gap-3">
                   <LanguageSwitcher />
+                  {!loading && (
+                    isAuthenticated ? (
+                      <UserMenu />
+                    ) : (
+                      <Button variant="outline" asChild>
+                        <Link href={`/${locale}/login`}>Login</Link>
+                      </Button>
+                    )
+                  )}
                   <ShimmerButton>{t("contact")}</ShimmerButton>
                 </div>
               </nav>

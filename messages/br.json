@@ -143,5 +143,36 @@
     "loading": "Carregando...",
     "error": "Erro",
     "success": "Sucesso"
+  },
+  "auth": {
+    "login": {
+      "title": "Entrar",
+      "description": "Digite suas credenciais para acessar sua conta",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "password": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "signIn": "Entrar",
+      "signingIn": "Entrando...",
+      "success": "Login realizado com sucesso!"
+    }
+  },
+  "profile": {
+    "title": "Perfil do Usuário",
+    "description": "Gerencie suas informações pessoais e configurações de conta",
+    "fullName": "Nome Completo",
+    "fullNamePlaceholder": "Digite seu nome completo",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "avatarUrl": "URL do Avatar",
+    "avatarUrlPlaceholder": "https://exemplo.com/avatar.jpg",
+    "role": "Função",
+    "selectRole": "Selecione uma função",
+    "roleUser": "Usuário",
+    "roleAdmin": "Administrador",
+    "save": "Salvar Alterações",
+    "saving": "Salvando...",
+    "success": "Perfil atualizado com sucesso!",
+    "error": "Erro ao atualizar perfil"
   }
 }
