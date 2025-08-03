@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://liro.com.br'),
   title: "Liro - Entregue Seu Software com Confiança",
   description:
     "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos. Desenvolva e implante com tranquilidade.",
