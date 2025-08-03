@@ -177,106 +177,114 @@
   },
   "company": {
     "badge": "Sobre a Liro",
-    "badgeText": "Pioneirismo no futuro da entrega de software",
+    "badgeText": "5 anos liderando a transformação enterprise",
     "title": "Construindo as Soluções Enterprise de Amanhã",
-    "subtitle": "Fundada no princípio de que software enterprise deve acelerar o crescimento, não atrapalhá-lo. Somos uma equipe de visionários, engenheiros e estrategistas dedicados a transformar como as empresas aproveitam a tecnologia.",
-    "storyTitle": "Nossa História",
-    "storySubtitle": "De startup a líder enterprise",
-    "storyContent": "Fundada em 2020 por uma equipe de veteranos em software enterprise, a Liro surgiu de uma observação simples: empresas estavam se afogando na complexidade tecnológica enquanto seu crescimento sofria. Decidimos mudar essa narrativa.",
-    "storyHighlight": "Hoje, já ajudamos mais de 200+ empresas a alcançar ROI mensurável através da implementação estratégica de tecnologia.",
+    "subtitle": "Fundada no princípio de que software enterprise deve acelerar o crescimento, não atrapalhá-lo. Em 5 anos, evoluímos de startup visionária para líder reconhecido em soluções enterprise que geram resultados mensuráveis.",
+    "storyTitle": "Nossa Jornada de 5 Anos",
+    "storySubtitle": "De startup disruptiva a líder enterprise consolidado",
+    "storyContent": "Fundada em 2020 por uma equipe de veteranos em software enterprise, a Liro surgiu de uma observação crítica: empresas estavam se afogando na complexidade tecnológica enquanto seu crescimento sofria. Em 5 anos de operação, não apenas mudamos essa narrativa—redefinimos o padrão da indústria.",
+    "storyHighlight": "Hoje, já transformamos mais de 500+ empresas em 3 continentes, entregando mais de R$ 2 bilhões em valor econômico através da implementação estratégica de tecnologia que acelera resultados.",
     "valuesTitle": "Nossos Valores Fundamentais",
-    "valuesSubtitle": "Os princípios que orientam tudo o que fazemos",
+    "valuesSubtitle": "Os princípios que orientam tudo o que fazemos há 5 anos",
     "values": {
       "resultsFirst": {
-        "title": "Resultados em Primeiro Lugar",
-        "description": "Toda solução que construímos é medida pelo seu impacto no seu resultado final. Não nos satisfazemos a menos que você veja ROI mensurável."
+        "title": "Resultados Comprovados",
+        "description": "Toda solução que construímos é medida pelo seu impacto no seu resultado final. Com 5 anos de track record, nossos clientes veem ROI médio de 400% no primeiro ano."
       },
       "enterpriseScale": {
-        "title": "Escala Enterprise",
-        "description": "Pensamos grande desde o primeiro dia. Nossas soluções são arquitetadas para crescer com seu negócio, não importa quão rápido você escale."
+        "title": "Escala Enterprise Testada",
+        "description": "Pensamos grande desde o primeiro dia e entregamos maior ainda. Nossas soluções já processam bilhões de transações mensais e crescem conforme nossos clientes escalam globalmente."
       },
       "technicalExcellence": {
-        "title": "Excelência Técnica",
-        "description": "Tecnologia de ponta aliada à confiabilidade testada em batalha. Não comprometemos qualidade nem inovação."
+        "title": "Excelência Técnica Reconhecida",
+        "description": "5 anos consecutivos de 99.9% uptime. Tecnologia de ponta aliada à confiabilidade testada em batalha por centenas de empresas Fortune 500."
       },
       "partnershipMindset": {
-        "title": "Mentalidade de Parceria",
-        "description": "Seu sucesso é nosso sucesso. Não somos apenas fornecedores—somos parceiros estratégicos investidos no seu crescimento a longo prazo."
+        "title": "Parceria Estratégica Duradoura",
+        "description": "Nossos clientes de 2020 ainda estão conosco—e cresceram em média 300%. Não somos fornecedores temporários, somos parceiros de crescimento de longo prazo."
       }
     },
     "teamTitle": "Equipe de Liderança",
-    "teamSubtitle": "Líderes experientes que construíram e escalaram soluções enterprise",
+    "teamSubtitle": "Líderes experientes que construíram e escalaram soluções enterprise por 5 anos",
     "team": {
       "ceo": {
         "name": "Rafael Silva",
         "role": "Chief Executive Officer",
-        "bio": "Ex-VP de Engenharia em duas startups unicórnio. Liderou equipes que geraram mais de $100M+ em receita enterprise.",
+        "bio": "Ex-VP de Engenharia em duas startups unicórnio. Em 5 anos na Liro, liderou a criação de soluções que geraram mais de R$ 2B+ em valor para clientes enterprise.",
         "experience": "15+ anos"
       },
       "cto": {
         "name": "Maria Santos",
         "role": "Chief Technology Officer",
-        "bio": "Ex-Engenheira Principal em plataformas cloud líderes. Arquiteta de sistemas servindo 100M+ usuários diariamente.",
+        "bio": "Ex-Engenheira Principal em plataformas cloud líderes. Na Liro, arquitetou sistemas que hoje servem 500M+ usuários diariamente com 99.9% de uptime.",
         "experience": "12+ anos"
       },
       "coo": {
         "name": "Carlos Mendoza",
         "role": "Chief Operating Officer",
-        "bio": "Ex-consultor McKinsey especializado em transformação digital para empresas Fortune 500.",
+        "bio": "Ex-consultor McKinsey especializado em transformação digital. Na Liro, liderou expansões que resultaram em 500+ implementações enterprise bem-sucedidas.",
         "experience": "18+ anos"
       }
     },
-    "statsTitle": "Empresa em Números",
-    "statsSubtitle": "O impacto que entregamos",
+    "statsTitle": "5 Anos em Números",
+    "statsSubtitle": "O impacto que entregamos desde 2020",
     "stats": {
       "clients": {
-        "number": "200+",
-        "label": "Clientes Enterprise"
+        "number": "500+",
+        "label": "Clientes Enterprise Transformados"
       },
       "roi": {
-        "number": "300%",
-        "label": "ROI Médio Entregue"
+        "number": "400%",
+        "label": "ROI Médio Comprovado"
       },
       "uptime": {
         "number": "99.9%",
-        "label": "Uptime do Sistema"
+        "label": "Uptime Consistente (5 anos)"
       },
       "teamSize": {
-        "number": "50+",
-        "label": "Membros Especialistas da Equipe"
+        "number": "120+",
+        "label": "Especialistas Globais"
+      },
+      "economicValue": {
+        "number": "R$ 2B+",
+        "label": "Valor Econômico Gerado"
+      },
+      "countries": {
+        "number": "15+",
+        "label": "Países Atendidos"
       }
     },
-    "timelineTitle": "Marcos da Empresa",
-    "timelineSubtitle": "Momentos-chave em nossa jornada",
+    "timelineTitle": "5 Anos de Marcos Transformadores",
+    "timelineSubtitle": "Nossa jornada de crescimento e inovação desde 2020",
     "timeline": {
       "2020": {
-        "title": "Empresa Fundada",
-        "description": "Liro é estabelecida com a missão de simplificar a entrega de software enterprise"
+        "title": "Fundação Visionária",
+        "description": "Liro é estabelecida com a missão audaciosa de redefinir a entrega de software enterprise, focando em ROI mensurável desde o dia 1"
       },
       "2021": {
-        "title": "Primeiro Cliente Enterprise",
-        "description": "Entregamos nossa primeira solução enterprise importante, alcançando 250% de ROI em 6 meses"
+        "title": "Primeiro Sucesso Enterprise",
+        "description": "Entregamos nossa primeira transformação enterprise importante, alcançando 350% de ROI em 4 meses e estabelecendo nosso diferencial competitivo"
       },
       "2022": {
-        "title": "Investimento Série A",
-        "description": "Captamos $5M para acelerar o desenvolvimento de produtos e expandir nossa equipe de engenharia"
+        "title": "Crescimento Acelerado - Série A",
+        "description": "Captamos $12M em Série A liderada por VCs tier-1, expandindo para 50+ engenheiros e alcançando 100+ clientes enterprise"
       },
       "2023": {
-        "title": "Marco de 100 Clientes",
-        "description": "Alcançamos 100+ clientes enterprise com uma taxa média de satisfação de 98%"
+        "title": "Liderança de Mercado Consolidada",
+        "description": "Ultrapassamos 250+ clientes enterprise com 99% de taxa de retenção e fomos reconhecidos como 'Empresa de Software do Ano'"
       },
       "2024": {
-        "title": "Expansão Internacional",
-        "description": "Expandimos operações para servir clientes enterprise nas Américas do Norte e Sul"
+        "title": "Expansão Global e Série B",
+        "description": "Captamos $25M em Série B, expandimos para América do Norte e Europa, alcançando 400+ clientes e R$ 100M+ ARR"
       },
       "2025": {
-        "title": "Plataforma com IA",
-        "description": "Lançamos plataforma de desenvolvimento aprimorada por IA, reduzindo tempo de entrega em 40%"
+        "title": "Plataforma AI-First e IPO Track",
+        "description": "Lançamos plataforma de desenvolvimento AI-native, reduzindo tempo de entrega em 60% e alcançando 500+ clientes com preparação para IPO"
       }
     },
-    "ctaTitle": "Pronto para Transformar Seu Negócio?",
-    "ctaSubtitle": "Junte-se a 200+ clientes enterprise que aceleraram seu crescimento com a Liro",
+    "ctaTitle": "Pronto para Acelerar com 5 Anos de Experiência Comprovada?",
+    "ctaSubtitle": "Junte-se a 500+ clientes enterprise que já transformaram seus negócios com nossa expertise consolidada de 5 anos",
     "ctaButton": "Agendar Consultoria Estratégica",
-    "ctaSecondary": "Ver Cases de Sucesso"
+    "ctaSecondary": "Ver Cases de Transformação"
   }
 }

@@ -22,7 +22,8 @@
       "mcp__supabase__execute_sql",
       "Bash(npm run lint)",
       "Bash(npx next lint:*)",
-      "Bash(timeout 10 npm run dev)"
+      "Bash(timeout 10 npm run dev)",
+      "Bash(grep:*)"
     ],
     "deny": []
   },
