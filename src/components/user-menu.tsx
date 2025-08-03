@@ -78,7 +78,7 @@ export function UserMenu() {
           
           <Button 
             variant="outline" 
-            onClick={logout}
+            onClick={() => logout()}
             className="w-full justify-start"
           >
             <LogOut className="mr-2 h-4 w-4" />

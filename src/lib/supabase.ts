@@ -87,33 +87,45 @@ export async function signOut() {
 }
 
 export async function getCurrentUser() {
-  const { data: { user }, error } = await supabase.auth.getUser()
-  return { user, error }
+  try {
+    const { data: { user }, error } = await supabase.auth.getUser();
+    if (error) throw error;
+    return { user, error: null };
+  } catch (error) {
+    return { user: null, error };
+  }
 }
 
 export function onAuthStateChange(callback: (event: AuthChangeEvent, session: Session | null) => void) {
-  return supabase.auth.onAuthStateChange(callback)
+  return supabase.auth.onAuthStateChange(callback);
 }
 
 export async function getProfile(userId: string) {
+  if (!userId) throw new Error("User ID is required");
+  
   const { data, error } = await supabase
     .from('profiles')
     .select('*')
     .eq('id', userId)
-    .single()
+    .single();
   
-  return { profile: data, error }
+  return { profile: data, error };
 }
 
 export async function updateProfile(userId: string, updates: ProfileUpdate) {
+  if (!userId) throw new Error("User ID is required");
+  if (!updates || Object.keys(updates).length === 0) {
+    throw new Error("Updates are required");
+  }
+  
   const { data, error } = await supabase
     .from('profiles')
     .update(updates)
     .eq('id', userId)
     .select()
-    .single()
+    .single();
   
-  return { profile: data, error }
+  return { profile: data, error };
 }
 
 export async function createProfile(profile: ProfileInsert) {

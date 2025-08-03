@@ -1,33 +1,9 @@
-"use client"
+"use client";
 
-import { useAuthStore } from '@/lib/auth-store'
-import type { ProfileUpdate } from '@/lib/supabase'
+import { useProfileQuery } from "./use-profile-query";
+import { useAuth } from "./use-auth";
 
 export function useProfile() {
-  const {
-    profile,
-    profileLoading: loading,
-    profileError: error,
-    updateUserProfile,
-    getUserRole,
-    getUserRoleFromSession,
-    isAdmin,
-    isUser,
-    isAdminFromSession,
-    isUserFromSession
-  } = useAuthStore()
-
-  return {
-    profile,
-    loading,
-    error,
-    updateProfile: updateUserProfile,
-    getUserRole,
-    getUserRoleFromSession,
-    isAdmin,
-    isUser,
-    isAdminFromSession,
-    isUserFromSession,
-    hasProfile: !!profile
-  }
+  const { user } = useAuth();
+  return useProfileQuery({ user });
 }

@@ -24,7 +24,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useProfile } from "@/hooks/use-profile"
-import { useState } from "react"
 import { Loader2, User } from "lucide-react"
 import type { ProfileUpdate, UserRole } from "@/lib/supabase"
 
@@ -45,8 +44,7 @@ interface ProfileFormProps {
 
 export function ProfileForm({ onSuccess, onError, showRoleField = false }: ProfileFormProps) {
   const t = useTranslations("profile")
-  const { profile, updateProfile, loading: profileLoading, isAdmin } = useProfile()
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const { profile, updateProfile, updateLoading, loading: profileLoading, isAdmin } = useProfile()
 
   const form = useForm<ProfileFormData>({
     resolver: zodResolver(profileSchema),
@@ -72,10 +70,7 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
     }
   }, [profile, reset])
 
-  const onSubmit = async (values: ProfileFormData) => {
-    setIsSubmitting(true)
-
-    try {
+  const onSubmit = (values: ProfileFormData) => {
       const updates: ProfileUpdate = {}
       
       if (values.full_name !== profile?.full_name) {
@@ -100,18 +95,14 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
         return
       }
 
-      const { error } = await updateProfile(updates)
-      
-      if (error) {
-        onError?.(error.message)
-      } else {
-        onSuccess?.()
-      }
-    } catch (err) {
-      onError?.(err instanceof Error ? err.message : "An unexpected error occurred")
-    } finally {
-      setIsSubmitting(false)
-    }
+      updateProfile(updates, {
+        onSuccess: () => {
+          onSuccess?.()
+        },
+        onError: (error) => {
+          onError?.(error instanceof Error ? error.message : "Update failed")
+        }
+      })
   }
 
   if (profileLoading) {
@@ -145,7 +136,7 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
                   <FormControl>
                     <Input
                       placeholder={t("fullNamePlaceholder")}
-                      disabled={isSubmitting}
+                      disabled={updateLoading}
                       {...field}
                     />
                   </FormControl>
@@ -164,7 +155,7 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
                     <Input
                       type="email"
                       placeholder={t("emailPlaceholder")}
-                      disabled={isSubmitting}
+                      disabled={updateLoading}
                       {...field}
                     />
                   </FormControl>
@@ -183,7 +174,7 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
                     <Input
                       type="url"
                       placeholder={t("avatarUrlPlaceholder")}
-                      disabled={isSubmitting}
+                      disabled={updateLoading}
                       {...field}
                     />
                   </FormControl>
@@ -202,7 +193,7 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
                     <Select 
                       onValueChange={field.onChange} 
                       defaultValue={field.value}
-                      disabled={isSubmitting}
+                      disabled={updateLoading}
                     >
                       <FormControl>
                         <SelectTrigger>
@@ -223,9 +214,9 @@ export function ProfileForm({ onSuccess, onError, showRoleField = false }: Profi
             <Button
               type="submit"
               className="w-full"
-              disabled={isSubmitting}
+              disabled={updateLoading}
             >
-              {isSubmitting ? (
+              {updateLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   {t("saving")}

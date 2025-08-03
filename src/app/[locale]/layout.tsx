@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
+import { QueryProvider } from "@/components/providers/query-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://liro.com.br'),
+  metadataBase: new URL("https://liro.com.br"),
   title: "Liro - Entregue Seu Software com Confiança",
   description:
     "Plataforma de entrega de software que garante qualidade, segurança e confiabilidade para seus projetos. Desenvolva e implante com tranquilidade.",
@@ -96,10 +97,12 @@ export default async function LocaleLayout({
         />
       </head>
       <body className={`${inter.variable} antialiased dark container mx-auto`}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-        </NextIntlClientProvider>
+        <QueryProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            {children}
+          </NextIntlClientProvider>
+        </QueryProvider>
       </body>
     </html>
   );

@@ -1,27 +1,17 @@
-"use client"
+"use client";
 
-import { useEffect } from 'react'
-import { useAuthStore } from '@/lib/auth-store'
+import { useAuthQuery } from "./use-auth-query";
+import { useAuthStore } from "@/lib/auth-store";
 
 export function useAuth() {
-  const {
-    user,
-    loading,
-    error,
-    isAuthenticated,
-    initialize,
-    logout
-  } = useAuthStore()
-
-  useEffect(() => {
-    initialize()
-  }, [initialize])
+  const authQuery = useAuthQuery();
+  const { getUserRoleFromSession, isAdminFromSession, isUserFromSession } = useAuthStore();
 
   return {
-    user,
-    loading,
-    error,
-    isAuthenticated,
-    logout
-  }
+    ...authQuery,
+    // Session-based role methods for immediate access
+    getUserRoleFromSession,
+    isAdminFromSession,
+    isUserFromSession,
+  };
 }
