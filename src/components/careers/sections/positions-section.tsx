@@ -1,14 +1,15 @@
 'use client';
 
 import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
 import { JobCard } from "../ui/job-card";
 import { getAllJobs, JobPosition } from "@/lib/data/jobs";
 
-export function PositionsSection() {
+interface PositionsSectionProps {
+  locale: 'en' | 'br';
+}
+
+export function PositionsSection({ locale }: PositionsSectionProps) {
   const t = useTranslations("careers");
-  const params = useParams();
-  const locale = params.locale as 'en' | 'br';
   
   const allJobs = getAllJobs();
 
