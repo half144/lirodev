@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { TextAnimate } from "@/components/magicui/text-animate";
-import { Card } from "@/components/ui/card";
+import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Particles } from "@/components/magicui/particles";
 import {
   TargetIcon,
@@ -22,11 +22,31 @@ export function ValuesSection() {
   const t = useTranslations("company");
 
   const values = [
-    "resultsFirst",
-    "enterpriseScale",
-    "technicalExcellence",
-    "partnershipMindset",
-  ] as const;
+    {
+      key: "resultsFirst",
+      Icon: valueIcons.resultsFirst,
+      className: "lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:col-end-2",
+      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    },
+    {
+      key: "enterpriseScale", 
+      Icon: valueIcons.enterpriseScale,
+      className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    },
+    {
+      key: "technicalExcellence",
+      Icon: valueIcons.technicalExcellence,
+      className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    },
+    {
+      key: "partnershipMindset",
+      Icon: valueIcons.partnershipMindset,
+      className: "lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-4",
+      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    },
+  ];
 
   return (
     <section className="w-full max-w-7xl mt-16 sm:mt-24 relative">
@@ -43,52 +63,20 @@ export function ValuesSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        {values.map((value, index) => {
-          const Icon = valueIcons[value];
-          const isSpanned = index === 0 || index === 2;
-
-          return (
-            <Card
-              key={value}
-              className={`
-                p-6 sm:p-8 transition-all duration-300 group bg-card border-border relative overflow-hidden
-                ${isSpanned ? 'md:col-span-2 lg:col-span-2' : ''}
-                hover:bg-accent/30
-              `}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
-              <div className="relative z-10">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
-
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3">
-                      <TextAnimate
-                        animation="slideLeft"
-                        delay={0.1 * (index + 1)}
-                      >
-                        {t(`values.${value}.title`)}
-                      </TextAnimate>
-                    </h3>
-
-                    <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                      <TextAnimate animation="blurIn" delay={0.2 * (index + 1)}>
-                        {t(`values.${value}.description`)}
-                      </TextAnimate>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          );
-        })}
-      </div>
+      <BentoGrid className="lg:grid-rows-2">
+        {values.map((value) => (
+          <BentoCard
+            key={value.key}
+            name={t(`values.${value.key}.title`)}
+            description={t(`values.${value.key}.description`)}
+            href="#"
+            cta={t("learnMore", { defaultValue: "Learn More" })}
+            Icon={value.Icon}
+            background={value.background}
+            className={value.className}
+          />
+        ))}
+      </BentoGrid>
     </section>
   );
 }

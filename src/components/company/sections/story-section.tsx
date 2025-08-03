@@ -13,27 +13,27 @@ export function StorySection() {
   const milestones = [
     {
       icon: Calendar,
-      title: "2020",
-      description: "Fundação",
-      detail: "Início da jornada"
+      title: "2025",
+      description: "Founded",
+      detail: "Born for AI era"
     },
     {
       icon: Users,
-      title: "500+",
-      description: "Clientes",
-      detail: "Empresas transformadas"
+      title: "100%",
+      description: "AI-Native",
+      detail: "Zero legacy constraints"
     },
     {
       icon: TrendingUp,
-      title: "R$ 2B+",
-      description: "Valor Gerado",
-      detail: "Em 5 anos de operação"
+      title: "3x",
+      description: "Faster ROI",
+      detail: "vs legacy providers"
     },
     {
       icon: Globe,
-      title: "15+",
-      description: "Países",
-      detail: "Presença global"
+      title: "2025+",
+      description: "Future-Ready",
+      detail: "Built for tomorrow"
     }
   ];
 

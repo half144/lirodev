@@ -176,32 +176,32 @@
     "error": "Error updating profile"
   },
   "company": {
-    "badge": "About Liro",
-    "badgeText": "Pioneering the future of software delivery",
-    "title": "Building Tomorrow's Enterprise Solutions",
-    "subtitle": "Founded on the principle that enterprise software should accelerate growth, not hinder it. We're a team of visionaries, engineers, and strategists dedicated to transforming how businesses leverage technology.",
-    "storyTitle": "Our Story",
-    "storySubtitle": "From startup to enterprise leader",
-    "storyContent": "Founded in 2020 by a team of enterprise software veterans, Liro emerged from a simple observation: businesses were drowning in technological complexity while their growth suffered. We set out to change that narrative.",
-    "storyHighlight": "Today, we've helped over 200+ companies achieve measurable ROI through strategic technology implementation.",
-    "valuesTitle": "Our Core Values",
-    "valuesSubtitle": "The principles that drive everything we do",
+    "badge": "Founded 2025",
+    "badgeText": "Built for the AI-first, post-digital transformation era",
+    "title": "The Software Platform Built for Tomorrow's Business Reality",
+    "subtitle": "While others carry legacy thinking from the 2010s, we started in 2025 with a clean slate. Zero technical debt. Zero outdated assumptions. 100% focused on what enterprise software should be in the AI era.",
+    "storyTitle": "Why Starting in 2025 Changes Everything",
+    "storySubtitle": "Fresh perspective, cutting-edge foundation, measurable results",
+    "storyContent": "Founded in 2025 by battle-tested enterprise veterans who saw the industry's fundamental flaw: companies built on 2010s assumptions trying to solve 2025+ problems. While competitors struggle with legacy architectures and outdated methodologies, we built Liro from day one for the AI-driven, hyper-automated business landscape that defines success today.",
+    "storyHighlight": "Result: Our clients achieve 40% faster implementation, 60% lower TCO, and 300% ROI because we're not fighting against yesterday's constraints.",
+    "valuesTitle": "Built Different: Our 2025 Advantage",
+    "valuesSubtitle": "What happens when you build enterprise software with a clean slate in the AI era",
     "values": {
       "resultsFirst": {
-        "title": "Results First",
-        "description": "Every solution we build is measured by its impact on your bottom line. We're not satisfied unless you see measurable ROI."
+        "title": "AI-Native ROI Acceleration",
+        "description": "Every solution leverages 2025's AI breakthrough capabilities for unprecedented automation and insight generation. Our clients see measurable ROI 3x faster than legacy providers because we're built for today's business velocity."
       },
       "enterpriseScale": {
-        "title": "Enterprise Scale",
-        "description": "We think big from day one. Our solutions are architected to grow with your business, no matter how fast you scale."
+        "title": "Post-Cloud Architecture",
+        "description": "We started with 2025's infrastructure realities—edge computing, AI acceleration, quantum-ready security. No migration headaches, no technical debt, no legacy limitations holding back your growth."
       },
       "technicalExcellence": {
-        "title": "Technical Excellence",
-        "description": "Cutting-edge technology married with battle-tested reliability. We don't compromise on quality or innovation."
+        "title": "2025 Technology Stack",
+        "description": "Latest AI models, next-gen security protocols, real-time automation frameworks. We don't retrofit old systems—we build with technologies that define competitive advantage today."
       },
       "partnershipMindset": {
-        "title": "Partnership Mindset",
-        "description": "Your success is our success. We're not just vendors—we're strategic partners invested in your long-term growth."
+        "title": "Future-Forward Partnership",
+        "description": "While others help you catch up to 2020, we help you leapfrog to 2030. Strategic partnership means preparing your business for tomorrow's opportunities, not yesterday's problems."
       }
     },
     "teamTitle": "Leadership Team",
@@ -274,9 +274,9 @@
         "description": "Launched AI-enhanced development platform, reducing delivery time by 40%"
       }
     },
-    "ctaTitle": "Ready to Transform Your Business?",
-    "ctaSubtitle": "Join 200+ enterprise clients who've accelerated their growth with Liro",
-    "ctaButton": "Schedule Strategic Consultation",
-    "ctaSecondary": "View Success Stories"
+    "ctaTitle": "Ready to Leapfrog Your Competition?",
+    "ctaSubtitle": "While your competitors struggle with legacy systems and outdated thinking, get 2025-native enterprise software that puts you years ahead",
+    "ctaButton": "Claim Your 2025 Advantage",
+    "ctaSecondary": "See the Difference"
   }
 }

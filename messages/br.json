@@ -176,32 +176,32 @@
     "error": "Erro ao atualizar perfil"
   },
   "company": {
-    "badge": "Sobre a Liro",
-    "badgeText": "5 anos liderando a transformação enterprise",
-    "title": "Construindo as Soluções Enterprise de Amanhã",
-    "subtitle": "Fundada no princípio de que software enterprise deve acelerar o crescimento, não atrapalhá-lo. Em 5 anos, evoluímos de startup visionária para líder reconhecido em soluções enterprise que geram resultados mensuráveis.",
-    "storyTitle": "Nossa Jornada de 5 Anos",
-    "storySubtitle": "De startup disruptiva a líder enterprise consolidado",
-    "storyContent": "Fundada em 2020 por uma equipe de veteranos em software enterprise, a Liro surgiu de uma observação crítica: empresas estavam se afogando na complexidade tecnológica enquanto seu crescimento sofria. Em 5 anos de operação, não apenas mudamos essa narrativa—redefinimos o padrão da indústria.",
-    "storyHighlight": "Hoje, já transformamos mais de 500+ empresas em 3 continentes, entregando mais de R$ 2 bilhões em valor econômico através da implementação estratégica de tecnologia que acelera resultados.",
-    "valuesTitle": "Nossos Valores Fundamentais",
-    "valuesSubtitle": "Os princípios que orientam tudo o que fazemos há 5 anos",
+    "badge": "Fundada em 2025",
+    "badgeText": "Construída para a era pós-transformação digital, nativa em IA",
+    "title": "A Plataforma de Software Construída para a Realidade Empresarial de Amanhã",
+    "subtitle": "Enquanto outros carregam o pensamento legado dos anos 2010, começamos em 2025 com uma folha em branco. Zero dívida técnica. Zero suposições desatualizadas. 100% focados no que o software enterprise deve ser na era da IA.",
+    "storyTitle": "Por Que Começar em 2025 Muda Tudo",
+    "storySubtitle": "Perspectiva fresca, base de ponta, resultados mensuráveis",
+    "storyContent": "Fundada em 2025 por veteranos enterprise testados em batalha que viram a falha fundamental da indústria: empresas construídas com premissas dos anos 2010 tentando resolver problemas de 2025+. Enquanto concorrentes lutam com arquiteturas legadas e metodologias desatualizadas, construímos a Liro desde o primeiro dia para o cenário empresarial impulsionado por IA e hiper-automatizado que define o sucesso hoje.",
+    "storyHighlight": "Resultado: Nossos clientes alcançam implementação 40% mais rápida, TCO 60% menor e ROI de 300% porque não estamos lutando contra as limitações de ontem.",
+    "valuesTitle": "Construída Diferente: Nossa Vantagem 2025",
+    "valuesSubtitle": "O que acontece quando você constrói software enterprise do zero na era da IA",
     "values": {
       "resultsFirst": {
-        "title": "Resultados Comprovados",
-        "description": "Toda solução que construímos é medida pelo seu impacto no seu resultado final. Com 5 anos de track record, nossos clientes veem ROI médio de 400% no primeiro ano."
+        "title": "Aceleração de ROI Nativa em IA",
+        "description": "Cada solução aproveita as capacidades revolucionárias de IA de 2025 para automação e geração de insights sem precedentes. Nossos clientes veem ROI mensurável 3x mais rápido que provedores legados porque somos construídos para a velocidade empresarial de hoje."
       },
       "enterpriseScale": {
-        "title": "Escala Enterprise Testada",
-        "description": "Pensamos grande desde o primeiro dia e entregamos maior ainda. Nossas soluções já processam bilhões de transações mensais e crescem conforme nossos clientes escalam globalmente."
+        "title": "Arquitetura Pós-Cloud",
+        "description": "Começamos com as realidades de infraestrutura de 2025—edge computing, aceleração de IA, segurança quantum-ready. Sem dores de migração, sem dívida técnica, sem limitações legadas impedindo seu crescimento."
       },
       "technicalExcellence": {
-        "title": "Excelência Técnica Reconhecida",
-        "description": "5 anos consecutivos de 99.9% uptime. Tecnologia de ponta aliada à confiabilidade testada em batalha por centenas de empresas Fortune 500."
+        "title": "Stack Tecnológico 2025",
+        "description": "Modelos de IA mais recentes, protocolos de segurança next-gen, frameworks de automação em tempo real. Não retrofitamos sistemas antigos—construímos com tecnologias que definem vantagem competitiva hoje."
       },
       "partnershipMindset": {
-        "title": "Parceria Estratégica Duradoura",
-        "description": "Nossos clientes de 2020 ainda estão conosco—e cresceram em média 300%. Não somos fornecedores temporários, somos parceiros de crescimento de longo prazo."
+        "title": "Parceria Orientada ao Futuro",
+        "description": "Enquanto outros ajudam você a alcançar 2020, nós ajudamos você a pular para 2030. Parceria estratégica significa preparar seu negócio para as oportunidades de amanhã, não os problemas de ontem."
       }
     },
     "teamTitle": "Equipe de Liderança",
@@ -282,9 +282,9 @@
         "description": "Lançamos plataforma de desenvolvimento AI-native, reduzindo tempo de entrega em 60% e alcançando 500+ clientes com preparação para IPO"
       }
     },
-    "ctaTitle": "Pronto para Acelerar com 5 Anos de Experiência Comprovada?",
-    "ctaSubtitle": "Junte-se a 500+ clientes enterprise que já transformaram seus negócios com nossa expertise consolidada de 5 anos",
-    "ctaButton": "Agendar Consultoria Estratégica",
-    "ctaSecondary": "Ver Cases de Transformação"
+    "ctaTitle": "Pronto para Ultrapassar Sua Concorrência?",
+    "ctaSubtitle": "Enquanto seus concorrentes lutam com sistemas legados e pensamento desatualizado, obtenha software enterprise nativo-2025 que te coloca anos à frente",
+    "ctaButton": "Conquistar Sua Vantagem 2025",
+    "ctaSecondary": "Ver a Diferença"
   }
 }
