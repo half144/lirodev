@@ -19,7 +19,7 @@ import { User, LogOut, Settings } from "lucide-react"
 
 export function UserMenu() {
   const { user, isAuthenticated, logout, loading } = useAuth()
-  const { profile, getUserRoleFromSession } = useProfile()
+  const { profile, getUserRole } = useProfile()
   const pathname = usePathname()
   const locale = pathname.split('/')[1] || 'br'
 
@@ -28,7 +28,7 @@ export function UserMenu() {
   }
 
   const userInitial = profile?.full_name?.[0]?.toUpperCase() || user.email?.[0]?.toUpperCase()
-  const userRole = getUserRoleFromSession()
+  const userRole = getUserRole()
   const displayName = profile?.full_name || user.email
 
   return (

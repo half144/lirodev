@@ -6,6 +6,7 @@ import {
   getProfile, 
   updateProfile, 
   getRoleFromJWT,
+  supabase,
   type Profile, 
   type ProfileUpdate,
   type UserRole
@@ -103,11 +104,11 @@ export function useProfile() {
     return state.profile?.role ?? null
   }
 
-  const getUserRoleFromSession = (): UserRole | null => {
+  const getUserRoleFromSession = async (): Promise<UserRole | null> => {
     if (!user) return null
     
     // Try to get from JWT if available
-    const session = user.session
+    const { data: { session } } = await supabase.auth.getSession()
     if (session) {
       return getRoleFromJWT(session)
     }
@@ -117,12 +118,22 @@ export function useProfile() {
   }
 
   const isAdmin = (): boolean => {
-    const role = getUserRoleFromSession()
+    const role = getUserRole()
     return role === 'admin'
   }
 
   const isUser = (): boolean => {
-    const role = getUserRoleFromSession()
+    const role = getUserRole()
+    return role === 'user'
+  }
+
+  const isAdminFromSession = async (): Promise<boolean> => {
+    const role = await getUserRoleFromSession()
+    return role === 'admin'
+  }
+
+  const isUserFromSession = async (): Promise<boolean> => {
+    const role = await getUserRoleFromSession()
     return role === 'user'
   }
 
@@ -135,6 +146,8 @@ export function useProfile() {
     getUserRoleFromSession,
     isAdmin,
     isUser,
+    isAdminFromSession,
+    isUserFromSession,
     hasProfile: !!state.profile
   }
 }
