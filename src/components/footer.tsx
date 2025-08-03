@@ -41,7 +41,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Company Info */}
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold text-lime-300 mb-2">Liro</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">Liro</h3>
             <p className="text-gray-400 text-sm">
               {t('tagline')}
             </p>
@@ -53,7 +53,7 @@ export function Footer() {
               <Link
                 key={index}
                 href={link.href}
-                className="text-gray-300 hover:text-lime-300 transition-colors text-sm"
+                className="text-gray-300 hover:text-primary transition-colors text-sm"
               >
                 {link.name}
               </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <Link
                 key={index}
                 href={link.href}
-                className="text-gray-300 hover:text-lime-300 transition-colors text-sm"
+                className="text-gray-300 hover:text-primary transition-colors text-sm"
               >
                 {link.name}
               </Link>
@@ -75,7 +75,7 @@ export function Footer() {
               <a
                 key={index}
                 href={social.href}
-                className="text-gray-400 hover:text-lime-300 transition-colors"
+                className="text-gray-400 hover:text-primary transition-colors"
                 aria-label={social.name}
               >
                 <social.icon className="w-5 h-5" />

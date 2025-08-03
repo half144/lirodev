@@ -87,14 +87,14 @@ const SystemCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2 sm:gap-3 mb-3">
-        <div className="p-1.5 sm:p-2 rounded-lg bg-lime-300/20 dark:bg-lime-300/10">
-          <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-lime-600 dark:text-lime-400" />
+        <div className="p-1.5 sm:p-2 rounded-lg bg-primary/20 dark:bg-primary/10">
+          <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary dark:text-primary" />
         </div>
         <div className="flex flex-col min-w-0 flex-1">
           <figcaption className="text-sm sm:text-base font-semibold dark:text-white truncate">
             {name}
           </figcaption>
-          <p className="text-xs font-medium text-lime-600 dark:text-lime-400 bg-lime-50 dark:bg-lime-950/30 px-2 py-1 rounded-full w-fit">
+          <p className="text-xs font-medium text-primary dark:text-primary bg-primary/10 dark:bg-primary/20 px-2 py-1 rounded-full w-fit">
             {metric}
           </p>
         </div>

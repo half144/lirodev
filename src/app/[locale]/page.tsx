@@ -89,7 +89,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex flex-col items-center pt-6 sm:pt-12 gap-6 sm:gap-8 px-4">
         <div className="bg-white text-xs sm:text-sm rounded-full font-bold p-0.5 flex items-center gap-2 pr-2 sm:pr-3 max-w-full">
-          <div className="bg-lime-300 rounded-full p-1 px-2 text-black whitespace-nowrap">
+          <div className="bg-primary rounded-full p-1 px-2 text-primary-foreground whitespace-nowrap">
             {t("badge")}
           </div>
           <div className="text-black text-center sm:text-left">
@@ -109,7 +109,7 @@ export default function Home() {
             </TextAnimate>
           </div>
           <div className="w-full flex justify-center">
-            <button className="bg-lime-300 text-black font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base whitespace-nowrap">
+            <button className="bg-primary text-primary-foreground font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base whitespace-nowrap">
               {t("cta")}
             </button>
           </div>

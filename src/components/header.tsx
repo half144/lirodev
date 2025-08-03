@@ -193,7 +193,7 @@ export function Header() {
                       ) : (
                         <Link
                           href={item.href}
-                          className="text-sm font-medium text-foreground hover:text-lime-300 transition-colors"
+                          className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {item.title}
