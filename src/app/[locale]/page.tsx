@@ -1,3 +1,5 @@
+'use client';
+
 import { Meteors } from "@/components/magicui/meteors";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { SparklesText } from "@/components/magicui/sparkles-text";
