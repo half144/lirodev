@@ -57,7 +57,7 @@ export function ValuesSection() {
           <TextAnimate animation="slideUp">{t("valuesTitle")}</TextAnimate>
         </h2>
         <p className="text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto">
-          <TextAnimate animation="blurIn" delay={0.2}>
+          <TextAnimate animation="blurIn" delay={0.2} as="span">
             {t("valuesSubtitle")}
           </TextAnimate>
         </p>
