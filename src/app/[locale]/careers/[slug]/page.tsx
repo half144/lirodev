@@ -17,13 +17,5 @@ export default async function JobDetailPage({ params }: JobDetailPageProps) {
     notFound();
   }
 
-  return <JobDetailView job={job} locale={locale as 'en' | 'br'} />;
-}
-
-export async function generateStaticParams() {
-  const jobs = await import("@/lib/data/jobs").then(m => m.getAllJobs());
-  
-  return jobs.map((job) => ({
-    slug: job.slug,
-  }));
+  return <JobDetailView job={job} locale={locale as "en" | "br"} />;
 }

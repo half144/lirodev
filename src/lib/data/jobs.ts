@@ -59,31 +59,31 @@ export const mockJobPositions: JobPosition[] = [
     slug: "senior-full-stack-developer",
     title: {
       en: "Senior Full Stack Developer",
-      br: "Desenvolvedor Full Stack Sênior"
+      br: "Desenvolvedor Full Stack Sênior",
     },
     department: {
       en: "Development",
-      br: "Desenvolvimento"
+      br: "Desenvolvimento",
     },
     location: {
       en: "Remote",
-      br: "Remoto"
+      br: "Remoto",
     },
     type: {
       en: "Full Time",
-      br: "Tempo Integral"
+      br: "Tempo Integral",
     },
     salary: {
       en: "$80,000 - $120,000",
-      br: "R$ 15.000 - R$ 22.000"
+      br: "R$ 15.000 - R$ 22.000",
     },
     experience: {
       en: "5+ years",
-      br: "5+ anos"
+      br: "5+ anos",
     },
     description: {
       en: "We're looking for an experienced full stack developer to lead the development of complex enterprise solutions. You'll work with modern technologies and have autonomy to propose architectural improvements.",
-      br: "Procuramos um desenvolvedor full stack experiente para liderar o desenvolvimento de soluções enterprise complexas. Você trabalhará com tecnologias modernas e terá autonomia para propor melhorias arquiteturais."
+      br: "Procuramos um desenvolvedor full stack experiente para liderar o desenvolvimento de soluções enterprise complexas. Você trabalhará com tecnologias modernas e terá autonomia para propor melhorias arquiteturais.",
     },
     responsibilities: {
       en: [
@@ -92,7 +92,7 @@ export const mockJobPositions: JobPosition[] = [
         "Collaborate with product and design teams to deliver high-quality features",
         "Mentor junior developers and conduct code reviews",
         "Optimize application performance and ensure security best practices",
-        "Participate in technical decision-making and architecture discussions"
+        "Participate in technical decision-making and architecture discussions",
       ],
       br: [
         "Liderar o desenvolvimento de aplicações web escaláveis usando React e Node.js",
@@ -100,8 +100,8 @@ export const mockJobPositions: JobPosition[] = [
         "Colaborar com equipes de produto e design para entregar funcionalidades de alta qualidade",
         "Mentorar desenvolvedores júnior e conduzir revisões de código",
         "Otimizar performance de aplicações e garantir boas práticas de segurança",
-        "Participar de decisões técnicas e discussões de arquitetura"
-      ]
+        "Participar de decisões técnicas e discussões de arquitetura",
+      ],
     },
     requirements: {
       en: [
@@ -110,7 +110,7 @@ export const mockJobPositions: JobPosition[] = [
         "Knowledge of Docker, CI/CD and microservices architecture",
         "Experience with automated testing and agile methodologies",
         "Excellent problem-solving and communication skills",
-        "Experience with cloud platforms (AWS, Azure, or GCP)"
+        "Experience with cloud platforms (AWS, Azure, or GCP)",
       ],
       br: [
         "5+ anos de experiência com React, Next.js e Node.js",
@@ -118,8 +118,8 @@ export const mockJobPositions: JobPosition[] = [
         "Conhecimento em Docker, CI/CD e arquitetura de microsserviços",
         "Experiência com testes automatizados e metodologias ágeis",
         "Excelentes habilidades de resolução de problemas e comunicação",
-        "Experiência com plataformas cloud (AWS, Azure ou GCP)"
-      ]
+        "Experiência com plataformas cloud (AWS, Azure ou GCP)",
+      ],
     },
     benefits: {
       en: [
@@ -129,7 +129,7 @@ export const mockJobPositions: JobPosition[] = [
         "Career plan and development",
         "Annual bonus",
         "Learning budget",
-        "Top-tier equipment"
+        "Top-tier equipment",
       ],
       br: [
         "Trabalho remoto ou híbrido",
@@ -138,54 +138,70 @@ export const mockJobPositions: JobPosition[] = [
         "Plano de carreira e desenvolvimento",
         "Bônus anual",
         "Orçamento para aprendizado",
-        "Equipamento de primeira linha"
-      ]
+        "Equipamento de primeira linha",
+      ],
     },
     skills: {
       en: [
-        "React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", 
-        "Docker", "AWS", "Git", "Jest", "Agile"
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "Git",
+        "Jest",
+        "Agile",
       ],
       br: [
-        "React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", 
-        "Docker", "AWS", "Git", "Jest", "Agile"
-      ]
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "Git",
+        "Jest",
+        "Agile",
+      ],
     },
     posted: "2025-01-15",
     applicationDeadline: "2025-03-15",
     featured: true,
-    remote: true
+    remote: true,
   },
   {
     id: "2",
     slug: "devops-engineer",
     title: {
       en: "DevOps Engineer",
-      br: "Engenheiro DevOps"
+      br: "Engenheiro DevOps",
     },
     department: {
       en: "Infrastructure",
-      br: "Infraestrutura"
+      br: "Infraestrutura",
     },
     location: {
       en: "Remote",
-      br: "Remoto"
+      br: "Remoto",
     },
     type: {
       en: "Full Time",
-      br: "Tempo Integral"
+      br: "Tempo Integral",
     },
     salary: {
       en: "$75,000 - $110,000",
-      br: "R$ 14.000 - R$ 20.000"
+      br: "R$ 14.000 - R$ 20.000",
     },
     experience: {
       en: "4+ years",
-      br: "4+ anos"
+      br: "4+ anos",
     },
     description: {
       en: "We're seeking a DevOps engineer to optimize our infrastructure and deployment processes. You'll be responsible for implementing automation and monitoring solutions in cloud environments.",
-      br: "Buscamos um engenheiro DevOps para otimizar nossa infraestrutura e processos de deploy. Você será responsável por implementar soluções de automação e monitoramento em ambientes cloud."
+      br: "Buscamos um engenheiro DevOps para otimizar nossa infraestrutura e processos de deploy. Você será responsável por implementar soluções de automação e monitoramento em ambientes cloud.",
     },
     responsibilities: {
       en: [
@@ -194,7 +210,7 @@ export const mockJobPositions: JobPosition[] = [
         "Implement monitoring, logging, and alerting systems",
         "Automate deployment processes and reduce manual interventions",
         "Ensure security compliance across all environments",
-        "Collaborate with development teams to optimize application performance"
+        "Collaborate with development teams to optimize application performance",
       ],
       br: [
         "Projetar e manter pipelines CI/CD para múltiplas aplicações",
@@ -202,8 +218,8 @@ export const mockJobPositions: JobPosition[] = [
         "Implementar sistemas de monitoramento, logging e alertas",
         "Automatizar processos de deploy e reduzir intervenções manuais",
         "Garantir conformidade de segurança em todos os ambientes",
-        "Colaborar com equipes de desenvolvimento para otimizar performance"
-      ]
+        "Colaborar com equipes de desenvolvimento para otimizar performance",
+      ],
     },
     requirements: {
       en: [
@@ -212,7 +228,7 @@ export const mockJobPositions: JobPosition[] = [
         "Knowledge of CI/CD pipelines and GitOps",
         "Experience with monitoring and observability",
         "Strong scripting skills (Python, Bash, or Go)",
-        "Understanding of security best practices"
+        "Understanding of security best practices",
       ],
       br: [
         "Experiência com AWS, Azure ou Google Cloud Platform",
@@ -220,8 +236,8 @@ export const mockJobPositions: JobPosition[] = [
         "Conhecimento em pipelines CI/CD e GitOps",
         "Experiência com monitoramento e observabilidade",
         "Habilidades sólidas em scripting (Python, Bash ou Go)",
-        "Entendimento de boas práticas de segurança"
-      ]
+        "Entendimento de boas práticas de segurança",
+      ],
     },
     benefits: {
       en: [
@@ -230,7 +246,7 @@ export const mockJobPositions: JobPosition[] = [
         "Flexible hours",
         "Career plan and development",
         "Certification budget",
-        "Conference attendance"
+        "Conference attendance",
       ],
       br: [
         "Trabalho remoto ou híbrido",
@@ -238,54 +254,68 @@ export const mockJobPositions: JobPosition[] = [
         "Horários flexíveis",
         "Plano de carreira e desenvolvimento",
         "Orçamento para certificações",
-        "Participação em conferências"
-      ]
+        "Participação em conferências",
+      ],
     },
     skills: {
       en: [
-        "AWS", "Terraform", "Kubernetes", "Docker", "CI/CD", 
-        "Python", "Monitoring", "Security", "GitOps"
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "Python",
+        "Monitoring",
+        "Security",
+        "GitOps",
       ],
       br: [
-        "AWS", "Terraform", "Kubernetes", "Docker", "CI/CD", 
-        "Python", "Monitoramento", "Segurança", "GitOps"
-      ]
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "Python",
+        "Monitoramento",
+        "Segurança",
+        "GitOps",
+      ],
     },
     posted: "2025-01-10",
     applicationDeadline: "2025-03-10",
     featured: false,
-    remote: true
+    remote: true,
   },
   {
     id: "3",
     slug: "product-manager",
     title: {
       en: "Product Manager",
-      br: "Gerente de Produto"
+      br: "Gerente de Produto",
     },
     department: {
       en: "Product",
-      br: "Produto"
+      br: "Produto",
     },
     location: {
       en: "Hybrid",
-      br: "Híbrido"
+      br: "Híbrido",
     },
     type: {
       en: "Full Time",
-      br: "Tempo Integral"
+      br: "Tempo Integral",
     },
     salary: {
       en: "$90,000 - $130,000",
-      br: "R$ 16.000 - R$ 24.000"
+      br: "R$ 16.000 - R$ 24.000",
     },
     experience: {
       en: "3+ years",
-      br: "3+ anos"
+      br: "3+ anos",
     },
     description: {
       en: "We're looking for a strategic product manager to lead enterprise product development. You'll be responsible for defining roadmaps, working with stakeholders and ensuring value delivery.",
-      br: "Procuramos um gerente de produto estratégico para liderar o desenvolvimento de produtos enterprise. Você será responsável por definir roadmaps, trabalhar com stakeholders e garantir a entrega de valor."
+      br: "Procuramos um gerente de produto estratégico para liderar o desenvolvimento de produtos enterprise. Você será responsável por definir roadmaps, trabalhar com stakeholders e garantir a entrega de valor.",
     },
     responsibilities: {
       en: [
@@ -294,7 +324,7 @@ export const mockJobPositions: JobPosition[] = [
         "Collaborate with engineering, design, and sales teams",
         "Gather and prioritize customer requirements",
         "Define and track key product metrics",
-        "Lead product launches and go-to-market strategies"
+        "Lead product launches and go-to-market strategies",
       ],
       br: [
         "Definir estratégia e roadmap de produto para soluções enterprise",
@@ -302,8 +332,8 @@ export const mockJobPositions: JobPosition[] = [
         "Colaborar com equipes de engenharia, design e vendas",
         "Coletar e priorizar requisitos de clientes",
         "Definir e acompanhar métricas-chave do produto",
-        "Liderar lançamentos de produtos e estratégias go-to-market"
-      ]
+        "Liderar lançamentos de produtos e estratégias go-to-market",
+      ],
     },
     requirements: {
       en: [
@@ -312,7 +342,7 @@ export const mockJobPositions: JobPosition[] = [
         "Experience with data analysis and product metrics",
         "Communication and leadership skills",
         "Understanding of enterprise software markets",
-        "Experience with product management tools"
+        "Experience with product management tools",
       ],
       br: [
         "3+ anos de experiência em gestão de produtos B2B",
@@ -320,8 +350,8 @@ export const mockJobPositions: JobPosition[] = [
         "Experiência com análise de dados e métricas de produto",
         "Habilidades de comunicação e liderança",
         "Entendimento de mercados de software enterprise",
-        "Experiência com ferramentas de gestão de produto"
-      ]
+        "Experiência com ferramentas de gestão de produto",
+      ],
     },
     benefits: {
       en: [
@@ -330,7 +360,7 @@ export const mockJobPositions: JobPosition[] = [
         "Flexible hours",
         "Career plan and development",
         "Stock options",
-        "Product conference budget"
+        "Product conference budget",
       ],
       br: [
         "Modelo de trabalho híbrido",
@@ -338,49 +368,75 @@ export const mockJobPositions: JobPosition[] = [
         "Horários flexíveis",
         "Plano de carreira e desenvolvimento",
         "Opções de ações",
-        "Orçamento para conferências de produto"
-      ]
+        "Orçamento para conferências de produto",
+      ],
     },
     skills: {
       en: [
-        "Product Strategy", "Market Research", "Data Analysis", "Agile", 
-        "Stakeholder Management", "B2B", "Roadmapping", "User Research"
+        "Product Strategy",
+        "Market Research",
+        "Data Analysis",
+        "Agile",
+        "Stakeholder Management",
+        "B2B",
+        "Roadmapping",
+        "User Research",
       ],
       br: [
-        "Estratégia de Produto", "Pesquisa de Mercado", "Análise de Dados", "Agile", 
-        "Gestão de Stakeholders", "B2B", "Roadmapping", "Pesquisa de Usuário"
-      ]
+        "Estratégia de Produto",
+        "Pesquisa de Mercado",
+        "Análise de Dados",
+        "Agile",
+        "Gestão de Stakeholders",
+        "B2B",
+        "Roadmapping",
+        "Pesquisa de Usuário",
+      ],
     },
     posted: "2025-01-12",
     applicationDeadline: "2025-03-12",
     featured: true,
-    remote: false
-  }
+    remote: false,
+  },
 ];
 
 // Utility functions
 export function getJobById(id: string): JobPosition | undefined {
-  return mockJobPositions.find(job => job.id === id);
+  return mockJobPositions.find((job) => job.id === id);
 }
 
 export function getJobBySlug(slug: string): JobPosition | undefined {
-  return mockJobPositions.find(job => job.slug === slug);
+  return mockJobPositions.find((job) => job.slug === slug);
 }
 
 export function getFeaturedJobs(): JobPosition[] {
-  return mockJobPositions.filter(job => job.featured);
+  return mockJobPositions.filter((job) => job.featured);
 }
 
-export function getJobsByDepartment(department: string, locale: 'en' | 'br' = 'en'): JobPosition[] {
-  return mockJobPositions.filter(job => 
-    job.department[locale].toLowerCase() === department.toLowerCase()
+export function getJobsByDepartment(
+  department: string,
+  locale: "en" | "br" = "en"
+): JobPosition[] {
+  return mockJobPositions.filter(
+    (job) => job.department[locale].toLowerCase() === department.toLowerCase()
   );
 }
 
 export function getRemoteJobs(): JobPosition[] {
-  return mockJobPositions.filter(job => job.remote);
+  return mockJobPositions.filter((job) => job.remote);
 }
 
 export function getAllJobs(): JobPosition[] {
   return mockJobPositions;
 }
+
+const jobsService = {
+  getJobById,
+  getJobBySlug,
+  getFeaturedJobs,
+  getJobsByDepartment,
+  getRemoteJobs,
+  getAllJobs,
+};
+
+export default jobsService;
