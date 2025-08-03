@@ -175,6 +175,127 @@
     "success": "Profile updated successfully!",
     "error": "Error updating profile"
   },
+  "LetsTalk": {
+    "meta": {
+      "title": "Let's Talk - Transform Your Business | Liro",
+      "description": "Get a free strategic assessment and discover how to achieve 300% ROI with AI-native enterprise solutions. Schedule your consultation today."
+    },
+    "hero": {
+      "badge": "Enterprise Solutions",
+      "title": "Let's Talk",
+      "subtitle": "Transform your software delivery in 90 days. Get a free strategic assessment and discover how to achieve 300% ROI with AI-native solutions."
+    },
+    "form": {
+      "title": "Start Your Transformation",
+      "subtitle": "Share your goals and challenges. We'll show you exactly how to achieve 300% ROI with our proven methodology.",
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Business Email",
+          "placeholder": "your@company.com"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+1 (555) 123-4567"
+        },
+        "company": {
+          "label": "Company Name",
+          "placeholder": "Your company name"
+        },
+        "projectType": {
+          "label": "Project Type",
+          "placeholder": "Select project type",
+          "options": {
+            "custom": "Custom Development",
+            "integration": "System Integration", 
+            "performance": "Performance Optimization",
+            "other": "Other"
+          }
+        },
+        "companySize": {
+          "label": "Company Size",
+          "placeholder": "Select company size",
+          "options": {
+            "1-10": "1-10 employees",
+            "11-50": "11-50 employees",
+            "51-200": "51-200 employees",
+            "201-1000": "201-1000 employees",
+            "1000+": "1000+ employees"
+          }
+        },
+        "budget": {
+          "label": "Budget Range",
+          "placeholder": "Select budget range",
+          "options": {
+            "10k-50k": "$10k - $50k",
+            "50k-100k": "$50k - $100k",
+            "100k-250k": "$100k - $250k",
+            "250k+": "$250k+"
+          }
+        },
+        "timeline": {
+          "label": "Timeline",
+          "placeholder": "Select timeline",
+          "options": {
+            "asap": "ASAP",
+            "1-3": "1-3 months",
+            "3-6": "3-6 months",
+            "6+": "6+ months"
+          }
+        },
+        "message": {
+          "label": "Project Details",
+          "placeholder": "Tell us about your project, current challenges, and desired outcomes..."
+        }
+      },
+      "submit": "Get Free Assessment",
+      "submitting": "Scheduling Assessment...",
+      "success": "Thank you! We'll contact you within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "trustIndicators": {
+      "guarantee": "Zero-Risk Guarantee",
+      "guaranteeText": "If we can't show you a clear path to 300% ROI in our first call, we'll refer you to someone who can.",
+      "response": "24-Hour Response",
+      "responseText": "Get your strategic assessment scheduled within 24 hours.",
+      "results": "Proven Results",
+      "resultsText": "200+ enterprise clients with average 300% ROI."
+    },
+    "process": {
+      "title": "What Happens Next",
+      "subtitle": "Our 5-step process to transform your business",
+      "steps": {
+        "1": {
+          "title": "Strategic Assessment Call",
+          "description": "45-minute analysis of your current systems and growth bottlenecks"
+        },
+        "2": {
+          "title": "ROI Projection Report",
+          "description": "Detailed analysis showing exactly how you'll achieve 300% ROI"
+        },
+        "3": {
+          "title": "Solution Architecture",
+          "description": "Custom technology roadmap designed for your specific needs"
+        },
+        "4": {
+          "title": "90-Day Implementation",
+          "description": "Rapid deployment with measurable milestones every 30 days"
+        },
+        "5": {
+          "title": "Performance Optimization",
+          "description": "Continuous optimization to maximize ROI and scale with growth"
+        }
+      }
+    },
+    "stats": {
+      "clients": "Enterprise Clients",
+      "roi": "Average ROI", 
+      "response": "Response Time"
+    }
+  },
   "company": {
     "badge": "Founded 2025",
     "badgeText": "Built for the AI-first, post-digital transformation era",

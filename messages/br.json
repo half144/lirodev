@@ -175,6 +175,127 @@
     "success": "Perfil atualizado com sucesso!",
     "error": "Erro ao atualizar perfil"
   },
+  "LetsTalk": {
+    "meta": {
+      "title": "Vamos Conversar - Transforme Seu Negócio | Liro",
+      "description": "Obtenha uma avaliação estratégica gratuita e descubra como alcançar 300% de ROI com soluções enterprise nativas em IA. Agende sua consultoria hoje."
+    },
+    "hero": {
+      "badge": "Soluções Enterprise",
+      "title": "Vamos Conversar",
+      "subtitle": "Transforme sua entrega de software em 90 dias. Obtenha uma avaliação estratégica gratuita e descubra como alcançar 300% de ROI com soluções nativas em IA."
+    },
+    "form": {
+      "title": "Inicie Sua Transformação",
+      "subtitle": "Compartilhe seus objetivos e desafios. Mostraremos exatamente como alcançar 300% de ROI com nossa metodologia comprovada.",
+      "fields": {
+        "fullName": {
+          "label": "Nome Completo",
+          "placeholder": "Seu nome completo"
+        },
+        "email": {
+          "label": "E-mail Corporativo",
+          "placeholder": "seu@empresa.com"
+        },
+        "phone": {
+          "label": "Telefone",
+          "placeholder": "+55 (11) 99999-9999"
+        },
+        "company": {
+          "label": "Nome da Empresa",
+          "placeholder": "Nome da sua empresa"
+        },
+        "projectType": {
+          "label": "Tipo de Projeto",
+          "placeholder": "Selecione o tipo de projeto",
+          "options": {
+            "custom": "Desenvolvimento Personalizado",
+            "integration": "Integração de Sistemas",
+            "performance": "Otimização de Performance",
+            "other": "Outro"
+          }
+        },
+        "companySize": {
+          "label": "Tamanho da Empresa",
+          "placeholder": "Selecione o tamanho da empresa",
+          "options": {
+            "1-10": "1-10 funcionários",
+            "11-50": "11-50 funcionários",
+            "51-200": "51-200 funcionários",
+            "201-1000": "201-1000 funcionários",
+            "1000+": "1000+ funcionários"
+          }
+        },
+        "budget": {
+          "label": "Orçamento",
+          "placeholder": "Selecione a faixa de orçamento",
+          "options": {
+            "10k-50k": "R$ 50k - R$ 250k",
+            "50k-100k": "R$ 250k - R$ 500k",
+            "100k-250k": "R$ 500k - R$ 1,25M",
+            "250k+": "R$ 1,25M+"
+          }
+        },
+        "timeline": {
+          "label": "Prazo",
+          "placeholder": "Selecione o prazo",
+          "options": {
+            "asap": "O mais rápido possível",
+            "1-3": "1-3 meses",
+            "3-6": "3-6 meses",
+            "6+": "6+ meses"
+          }
+        },
+        "message": {
+          "label": "Detalhes do Projeto",
+          "placeholder": "Conte-nos sobre seu projeto, desafios atuais e resultados desejados..."
+        }
+      },
+      "submit": "Obter Avaliação Gratuita",
+      "submitting": "Agendando Avaliação...",
+      "success": "Obrigado! Entraremos em contato em até 24 horas.",
+      "error": "Algo deu errado. Tente novamente."
+    },
+    "trustIndicators": {
+      "guarantee": "Garantia Zero Risco",
+      "guaranteeText": "Se não conseguirmos mostrar um caminho claro para 300% de ROI na primeira chamada, indicaremos alguém que pode.",
+      "response": "Resposta em 24 Horas",
+      "responseText": "Sua avaliação estratégica será agendada em até 24 horas.",
+      "results": "Resultados Comprovados",
+      "resultsText": "200+ clientes enterprise com ROI médio de 300%."
+    },
+    "process": {
+      "title": "O Que Acontece Agora",
+      "subtitle": "Nosso processo de 5 etapas para transformar seu negócio",
+      "steps": {
+        "1": {
+          "title": "Chamada de Avaliação Estratégica",
+          "description": "Análise de 45 minutos dos seus sistemas atuais e gargalos de crescimento"
+        },
+        "2": {
+          "title": "Relatório de Projeção de ROI",
+          "description": "Análise detalhada mostrando exatamente como você alcançará 300% de ROI"
+        },
+        "3": {
+          "title": "Arquitetura da Solução",
+          "description": "Roadmap tecnológico personalizado desenhado para suas necessidades específicas"
+        },
+        "4": {
+          "title": "Implementação em 90 Dias",
+          "description": "Deploy rápido com marcos mensuráveis a cada 30 dias"
+        },
+        "5": {
+          "title": "Otimização de Performance",
+          "description": "Otimização contínua para maximizar ROI e escalar com crescimento"
+        }
+      }
+    },
+    "stats": {
+      "clients": "Clientes Enterprise",
+      "roi": "ROI Médio",
+      "response": "Tempo de Resposta"
+    }
+  },
   "company": {
     "badge": "Fundada em 2025",
     "badgeText": "Construída para a era pós-transformação digital, nativa em IA",
