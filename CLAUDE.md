@@ -131,6 +131,7 @@ npm run lint
 - Use `src/components/magicui/` for interactive/animated components
 - Import icons from `@radix-ui/react-icons` or `lucide-react`
 - Integrate proper form validation with React Hook Form and Zod
+- **ALWAYS use official Card components**: Import and use `Card`, `CardHeader`, `CardTitle`, `CardDescription`, `CardContent`, `CardFooter` from `@/components/ui/card` instead of creating custom div-based cards. This ensures consistent styling, proper semantic structure, and maintains design system integrity.
 
 ### Internationalization
 - Add new text content to both `messages/en.json` and `messages/br.json`

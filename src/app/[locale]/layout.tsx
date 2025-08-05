@@ -96,7 +96,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} antialiased dark container mx-auto`}>
+      <body className={`${inter.variable} antialiased dark  mx-auto`}>
         <QueryProvider>
           <NextIntlClientProvider messages={messages}>
             {children}
