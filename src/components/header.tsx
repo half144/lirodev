@@ -111,7 +111,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Liro Logo" className="h-14 w-auto" />
+          <img src="/logo.png" alt="Liro Logo" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

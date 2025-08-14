@@ -5,22 +5,22 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 function useFooterLinks() {
-  const t = useTranslations('footer');
-  const nav = useTranslations('nav');
-  
+  const t = useTranslations("footer");
+  const nav = useTranslations("nav");
+
   return {
     company: [
-      { name: nav('about'), href: "#" },
-      { name: nav('services'), href: "#" },
-      { name: nav('contact'), href: "#" },
+      { name: nav("about"), href: "#" },
+      { name: nav("services"), href: "#" },
+      { name: nav("contact"), href: "#" },
     ],
     legal: [
-      { name: t('privacyPolicy'), href: "#" },
-      { name: t('termsOfService'), href: "#" },
+      { name: t("privacyPolicy"), href: "#" },
+      { name: t("termsOfService"), href: "#" },
     ],
   };
 }
@@ -33,8 +33,8 @@ const socialLinks = [
 
 export function Footer() {
   const footerLinks = useFooterLinks();
-  const t = useTranslations('footer');
-  
+  const t = useTranslations("footer");
+
   return (
     <footer className="text-white">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -42,9 +42,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-primary mb-2">Liro</h3>
-            <p className="text-gray-400 text-sm">
-              {t('tagline')}
-            </p>
+            <p className="text-gray-400 text-sm">{t("tagline")}</p>
           </div>
 
           {/* Navigation Links */}
@@ -86,9 +84,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-6 pt-6 text-center">
-          <p className="text-gray-400 text-sm">
-            {t('copyright')}
-          </p>
+          <p className="text-gray-400 text-sm">{t("copyright")}</p>
         </div>
       </div>
     </footer>
