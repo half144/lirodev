@@ -36,13 +36,13 @@ export function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="text-white">
+    <footer className="text-foreground">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Company Info */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-primary mb-2">Liro</h3>
-            <p className="text-gray-400 text-sm">{t("tagline")}</p>
+            <p className="text-muted-foreground text-sm">{t("tagline")}</p>
           </div>
 
           {/* Navigation Links */}
@@ -51,7 +51,7 @@ export function Footer() {
               <Link
                 key={index}
                 href={link.href}
-                className="text-gray-300 hover:text-primary transition-colors text-sm"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
               >
                 {link.name}
               </Link>
@@ -60,7 +60,7 @@ export function Footer() {
               <Link
                 key={index}
                 href={link.href}
-                className="text-gray-300 hover:text-primary transition-colors text-sm"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
               >
                 {link.name}
               </Link>
@@ -73,7 +73,7 @@ export function Footer() {
               <a
                 key={index}
                 href={social.href}
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label={social.name}
               >
                 <social.icon className="w-5 h-5" />
@@ -83,8 +83,8 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 mt-6 pt-6 text-center">
-          <p className="text-gray-400 text-sm">{t("copyright")}</p>
+        <div className="border-t border-border mt-6 pt-6 text-center">
+          <p className="text-muted-foreground text-sm">{t("copyright")}</p>
         </div>
       </div>
     </footer>

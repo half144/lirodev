@@ -166,7 +166,7 @@ export function Header() {
                 <Link href={`/${locale}/login`}>Login</Link>
               </Button>
             ))}
-          <ShimmerButton className="text-white! text-sm">
+          <ShimmerButton className="text-sm">
             {t("contactUs")}
           </ShimmerButton>
         </div>
