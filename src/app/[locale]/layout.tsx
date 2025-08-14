@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
 import { QueryProvider } from "@/components/providers/query-provider";
+import { ThemeProvider } from "@/lib/theme-context";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -96,12 +97,14 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} antialiased dark  mx-auto`}>
-        <QueryProvider>
-          <NextIntlClientProvider messages={messages}>
-            {children}
-          </NextIntlClientProvider>
-        </QueryProvider>
+      <body className={`${inter.variable} antialiased mx-auto`}>
+        <ThemeProvider>
+          <QueryProvider>
+            <NextIntlClientProvider messages={messages}>
+              {children}
+            </NextIntlClientProvider>
+          </QueryProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

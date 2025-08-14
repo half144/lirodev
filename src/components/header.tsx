@@ -28,6 +28,7 @@ import { ShimmerButton } from "./magicui/shimmer-button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { UserMenu } from "./user-menu";
 import { useAuth } from "@/hooks/use-auth";
+import { ThemeToggle } from "./theme-toggle";
 
 function useNavigation() {
   const t = useTranslations("nav");
@@ -155,6 +156,7 @@ export function Header() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden md:flex items-center space-x-2">
+          <ThemeToggle />
           <LanguageSwitcher />
           {!loading &&
             (isAuthenticated ? (
@@ -221,6 +223,7 @@ export function Header() {
                   ))}
                 </ul>
                 <div className="mt-6 flex flex-col gap-3">
+                  <ThemeToggle />
                   <LanguageSwitcher />
                   {!loading &&
                     (isAuthenticated ? (
