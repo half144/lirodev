@@ -8,8 +8,12 @@ const protectedRoutes = ['/dashboard', '/profile', '/admin']
 const intlMiddleware = createIntlMiddleware(routing)
 
 export async function middleware(request: NextRequest) {
-  const intlResponse = intlMiddleware(request)
   const pathname = request.nextUrl.pathname
+  if (pathname === '/') {
+    return NextResponse.next()
+  }
+
+  const intlResponse = intlMiddleware(request)
   const locale = pathname.split('/')[1]
   const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/'
   
@@ -21,7 +25,6 @@ export async function middleware(request: NextRequest) {
     return intlResponse
   }
   
-  // Check for Supabase auth token in cookies
   const authTokenKey = `sb-${process.env.NEXT_PUBLIC_SUPABASE_URL?.split('//')[1]?.split('.')[0]}-auth-token`
   const authToken = request.cookies.get(authTokenKey)
   
